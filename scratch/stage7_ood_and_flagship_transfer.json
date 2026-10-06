@@ -1,0 +1,110 @@
+{
+  "stage": 7,
+  "status": "PASSED",
+  "timestamp": "2026-10-06 01:29:50",
+  "ood_vdp": {
+    "mu_c_prop": 0.045,
+    "mu_c_base": 0.285,
+    "norm_p": 0.39139968156814575,
+    "norm_b": 1.6910769939422607
+  },
+  "ood_fhn": {
+    "I_true_hopf": 0.331281,
+    "I_c_p": 0.33151712369731207,
+    "err_p": 0.00023612369731207394,
+    "I_c_b": 0.4132,
+    "err_b": 0.08191900000000002
+  },
+  "flagship_supramolecular": {
+    "X1": {
+      "type": "Stable Focus",
+      "mean_drift_uM": 24.222274098710063,
+      "std_drift_uM": 0.021191814945685127,
+      "mean_retention_pct": 43.412887356512215,
+      "std_retention_pct": 0.04950747458989837
+    },
+    "X2": {
+      "type": "Stable Focus",
+      "mean_drift_uM": 13.225484839445146,
+      "std_drift_uM": 0.022989601949377447,
+      "mean_retention_pct": 71.74648609409786,
+      "std_retention_pct": 0.04911253131761309
+    },
+    "X3": {
+      "type": "Stable Focus",
+      "mean_drift_uM": 36.61319861907187,
+      "std_drift_uM": 0.03223319802181806,
+      "mean_retention_pct": 13.411005331211305,
+      "std_retention_pct": 0.07623043921148659
+    },
+    "X4": {
+      "type": "Stable Focus",
+      "mean_drift_uM": 17.996431467075777,
+      "std_drift_uM": 0.04456167588428805,
+      "mean_retention_pct": 57.606631990931795,
+      "std_retention_pct": 0.10497189558494253
+    },
+    "X5": {
+      "type": "Stable Focus",
+      "mean_drift_uM": 19.483662374964165,
+      "std_drift_uM": 0.03766103670393334,
+      "mean_retention_pct": 63.824105298830595,
+      "std_retention_pct": 0.06992636558355933
+    },
+    "X6": {
+      "type": "Stable Focus",
+      "mean_drift_uM": 21.804799412045604,
+      "std_drift_uM": 0.03851537964392896,
+      "mean_retention_pct": 65.38213144072331,
+      "std_retention_pct": 0.061148021810630976
+    },
+    "X7": {
+      "type": "Limit Cycle",
+      "gt_amp_uM": 721.1875370936102,
+      "mean_pred_amp_uM": 537.1695120675223,
+      "std_pred_amp_uM": 15.480818811783642,
+      "mean_amp_err_pct": 25.515974079042127,
+      "std_amp_err_pct": 2.1465732580697976
+    },
+    "X8": {
+      "type": "Limit Cycle",
+      "gt_amp_uM": 841.9613563096492,
+      "mean_pred_amp_uM": 841.9674178202238,
+      "std_pred_amp_uM": 0.08347755780697752,
+      "mean_amp_err_pct": 0.00795739297353954,
+      "std_amp_err_pct": 0.005958067002115632
+    },
+    "X9": {
+      "type": "Limit Cycle",
+      "gt_amp_uM": 302.5477207981808,
+      "mean_pred_amp_uM": 302.4628165108817,
+      "std_pred_amp_uM": 0.22497003272082225,
+      "mean_amp_err_pct": 0.0734912221232198,
+      "std_amp_err_pct": 0.030261674130449938
+    },
+    "X10": {
+      "type": "Limit Cycle",
+      "gt_amp_uM": 141.84741708790517,
+      "mean_pred_amp_uM": 141.76653344290597,
+      "std_pred_amp_uM": 0.1706407866780057,
+      "mean_amp_err_pct": 0.12162415863607857,
+      "std_amp_err_pct": 0.05413717992699092
+    },
+    "X11": {
+      "type": "Limit Cycle",
+      "gt_amp_uM": 812.7010664590805,
+      "mean_pred_amp_uM": 812.684056941952,
+      "std_pred_amp_uM": 0.8167276906430362,
+      "mean_amp_err_pct": 0.08805185351931845,
+      "std_amp_err_pct": 0.04848287781686219
+    },
+    "X12": {
+      "type": "Limit Cycle",
+      "gt_amp_uM": 30.78236172469788,
+      "mean_pred_amp_uM": 30.765404837472097,
+      "std_pred_amp_uM": 0.024290877406525677,
+      "mean_amp_err_pct": 0.07866443057795533,
+      "std_amp_err_pct": 0.05543887275891974
+    }
+  }
+}

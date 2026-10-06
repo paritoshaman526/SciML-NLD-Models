@@ -1,0 +1,392 @@
+{
+  "X1": {
+    "params": [
+      11.0,
+      6000.0,
+      0.15,
+      1.0
+    ],
+    "y_star": [
+      3716.6314420703743,
+      6000.0,
+      285.36855792962524,
+      3.406912155231176
+    ],
+    "y_pert": [
+      3673.8261583809303,
+      6000.0,
+      328.17384161906904,
+      4.088294586277411
+    ],
+    "perturbation_m1_mM": 42.80528368944378,
+    "per_seed": {
+      "42": {
+        "final_m1": 261.1023254394531,
+        "drift_from_ystar_mM": 24.266232490172115,
+        "pct_recovered": 43.310193512030345,
+        "converged": false
+      },
+      "101": {
+        "final_m1": 261.1212158203125,
+        "drift_from_ystar_mM": 24.24734210931274,
+        "pct_recovered": 43.35432446791053,
+        "converged": false
+      },
+      "777": {
+        "final_m1": 261.05242919921875,
+        "drift_from_ystar_mM": 24.31612873040649,
+        "pct_recovered": 43.19362790158755,
+        "converged": false
+      },
+      "999": {
+        "final_m1": 261.11883544921875,
+        "drift_from_ystar_mM": 24.24972248040649,
+        "pct_recovered": 43.34876353970593,
+        "converged": false
+      },
+      "1234": {
+        "final_m1": 261.0848083496094,
+        "drift_from_ystar_mM": 24.283749580015865,
+        "pct_recovered": 43.26927078396052,
+        "converged": false
+      },
+      "2024": {
+        "final_m1": 261.15203857421875,
+        "drift_from_ystar_mM": 24.21651935540649,
+        "pct_recovered": 43.42633135876511,
+        "converged": false
+      },
+      "5555": {
+        "final_m1": 261.087158203125,
+        "drift_from_ystar_mM": 24.28139972650024,
+        "pct_recovered": 43.274760418213795,
+        "converged": false
+      }
+    }
+  },
+  "X2": {
+    "params": [
+      12.0,
+      6000.0,
+      0.15,
+      1.0
+    ],
+    "y_star": [
+      3689.9329798647955,
+      6000.0,
+      312.0670201352041,
+      3.6899329798647957
+    ],
+    "y_pert": [
+      3643.122926844515,
+      6000.0,
+      358.8770731554847,
+      4.4279195758377545
+    ],
+    "perturbation_m1_mM": 46.81005302028061,
+    "per_seed": {
+      "42": {
+        "final_m1": 298.7872314453125,
+        "drift_from_ystar_mM": 13.279788689891575,
+        "pct_recovered": 71.63047714528744,
+        "converged": false
+      },
+      "101": {
+        "final_m1": 298.797607421875,
+        "drift_from_ystar_mM": 13.269412713329075,
+        "pct_recovered": 71.65264327391371,
+        "converged": false
+      },
+      "777": {
+        "final_m1": 298.7175598144531,
+        "drift_from_ystar_mM": 13.34946032075095,
+        "pct_recovered": 71.48163811101165,
+        "converged": false
+      },
+      "999": {
+        "final_m1": 298.81591796875,
+        "drift_from_ystar_mM": 13.251102166454075,
+        "pct_recovered": 71.69175997148947,
+        "converged": false
+      },
+      "1234": {
+        "final_m1": 298.7746887207031,
+        "drift_from_ystar_mM": 13.29233141450095,
+        "pct_recovered": 71.60368220744803,
+        "converged": false
+      },
+      "2024": {
+        "final_m1": 298.8312072753906,
+        "drift_from_ystar_mM": 13.23581285981345,
+        "pct_recovered": 71.72442241396524,
+        "converged": false
+      },
+      "5555": {
+        "final_m1": 298.7913818359375,
+        "drift_from_ystar_mM": 13.275638299266575,
+        "pct_recovered": 71.63934359673794,
+        "converged": false
+      }
+    }
+  },
+  "X3": {
+    "params": [
+      13.0,
+      6000.0,
+      0.25,
+      1.0
+    ],
+    "y_star": [
+      3720.1073741213036,
+      6000.0,
+      281.892625878696,
+      4.030116321964746
+    ],
+    "y_pert": [
+      3677.823480239499,
+      6000.0,
+      324.17651976050036,
+      4.836139586357695
+    ],
+    "perturbation_m1_mM": 42.283893881804396,
+    "per_seed": {
+      "42": {
+        "final_m1": 318.5557861328125,
+        "drift_from_ystar_mM": 36.66316025411652,
+        "pct_recovered": 13.292847729207335,
+        "converged": false
+      },
+      "101": {
+        "final_m1": 318.50469970703125,
+        "drift_from_ystar_mM": 36.61207382833527,
+        "pct_recovered": 13.413665423821863,
+        "converged": false
+      },
+      "777": {
+        "final_m1": 318.5007019042969,
+        "drift_from_ystar_mM": 36.608076025600894,
+        "pct_recovered": 13.423120094069485,
+        "converged": false
+      },
+      "999": {
+        "final_m1": 318.55291748046875,
+        "drift_from_ystar_mM": 36.66029160177277,
+        "pct_recovered": 13.299631996407912,
+        "converged": false
+      },
+      "1234": {
+        "final_m1": 318.5599670410156,
+        "drift_from_ystar_mM": 36.667341162319644,
+        "pct_recovered": 13.282960020627776,
+        "converged": false
+      },
+      "2024": {
+        "final_m1": 318.5046691894531,
+        "drift_from_ystar_mM": 36.612043310757144,
+        "pct_recovered": 13.413737596877196,
+        "converged": false
+      },
+      "5555": {
+        "final_m1": 318.55609130859375,
+        "drift_from_ystar_mM": 36.66346542989777,
+        "pct_recovered": 13.29212599865408,
+        "converged": false
+      }
+    }
+  },
+  "X4": {
+    "params": [
+      10.5,
+      4600.0,
+      0.6,
+      1.0
+    ],
+    "y_star": [
+      5118.992974573661,
+      4600.0,
+      283.00702542633917,
+      5.8423289383721135
+    ],
+    "y_pert": [
+      5076.54192075971,
+      4600.0,
+      325.45807924029003,
+      7.010794726046536
+    ],
+    "perturbation_m1_mM": 42.45105381395087,
+    "per_seed": {
+      "42": {
+        "final_m1": 264.9386901855469,
+        "drift_from_ystar_mM": 18.068335240792294,
+        "pct_recovered": 57.43725156981987,
+        "converged": false
+      },
+      "101": {
+        "final_m1": 264.91046142578125,
+        "drift_from_ystar_mM": 18.09656400055792,
+        "pct_recovered": 57.370754375452584,
+        "converged": false
+      },
+      "777": {
+        "final_m1": 264.8760986328125,
+        "drift_from_ystar_mM": 18.13092679352667,
+        "pct_recovered": 57.289807520471435,
+        "converged": false
+      },
+      "999": {
+        "final_m1": 264.9521484375,
+        "drift_from_ystar_mM": 18.05487698883917,
+        "pct_recovered": 57.46895455653984,
+        "converged": false
+      },
+      "1234": {
+        "final_m1": 264.9029235839844,
+        "drift_from_ystar_mM": 18.104101842354794,
+        "pct_recovered": 57.35299782733505,
+        "converged": false
+      },
+      "2024": {
+        "final_m1": 264.9919128417969,
+        "drift_from_ystar_mM": 18.015112584542294,
+        "pct_recovered": 57.56262573952425,
+        "converged": false
+      },
+      "5555": {
+        "final_m1": 264.9235534667969,
+        "drift_from_ystar_mM": 18.083471959542294,
+        "pct_recovered": 57.40159469586725,
+        "converged": false
+      }
+    }
+  },
+  "X5": {
+    "params": [
+      12.0,
+      4500.0,
+      0.5,
+      1.0
+    ],
+    "y_star": [
+      5142.945763545795,
+      4500.0,
+      359.05423645420524,
+      6.85726101806106
+    ],
+    "y_pert": [
+      5089.087628077664,
+      4500.0,
+      412.91237192233604,
+      8.22871322167327
+    ],
+    "perturbation_m1_mM": 53.85813546813078,
+    "per_seed": {
+      "42": {
+        "final_m1": 339.44757080078125,
+        "drift_from_ystar_mM": 19.60666565342399,
+        "pct_recovered": 63.595721457855234,
+        "converged": false
+      },
+      "101": {
+        "final_m1": 339.45245361328125,
+        "drift_from_ystar_mM": 19.60178284092399,
+        "pct_recovered": 63.604787520869785,
+        "converged": false
+      },
+      "777": {
+        "final_m1": 339.3985290527344,
+        "drift_from_ystar_mM": 19.655707401470863,
+        "pct_recovered": 63.50466418745291,
+        "converged": false
+      },
+      "999": {
+        "final_m1": 339.5179443359375,
+        "drift_from_ystar_mM": 19.53629211826774,
+        "pct_recovered": 63.72638609105239,
+        "converged": false
+      },
+      "1234": {
+        "final_m1": 339.46002197265625,
+        "drift_from_ystar_mM": 19.59421448154899,
+        "pct_recovered": 63.618839918542335,
+        "converged": false
+      },
+      "2024": {
+        "final_m1": 339.50390625,
+        "drift_from_ystar_mM": 19.55033020420524,
+        "pct_recovered": 63.70032115988556,
+        "converged": false
+      },
+      "5555": {
+        "final_m1": 339.4838562011719,
+        "drift_from_ystar_mM": 19.570380253033363,
+        "pct_recovered": 63.663093638632084,
+        "converged": false
+      }
+    }
+  },
+  "X6": {
+    "params": [
+      14.0,
+      5000.0,
+      0.3,
+      1.0
+    ],
+    "y_star": [
+      4582.0858473862245,
+      5000.0,
+      419.9141526137755,
+      6.414920186340714
+    ],
+    "y_pert": [
+      4519.098724494158,
+      5000.0,
+      482.90127550584185,
+      7.697904223608856
+    ],
+    "perturbation_m1_mM": 62.987122892066324,
+    "per_seed": {
+      "42": {
+        "final_m1": 398.1512145996094,
+        "drift_from_ystar_mM": 21.76293801416614,
+        "pct_recovered": 65.44859168840154,
+        "converged": false
+      },
+      "101": {
+        "final_m1": 398.1905822753906,
+        "drift_from_ystar_mM": 21.72357033838489,
+        "pct_recovered": 65.5110928378011,
+        "converged": false
+      },
+      "777": {
+        "final_m1": 398.3115234375,
+        "drift_from_ystar_mM": 21.602629176275514,
+        "pct_recovered": 65.70310218281693,
+        "converged": false
+      },
+      "999": {
+        "final_m1": 398.1090087890625,
+        "drift_from_ystar_mM": 21.805143824713014,
+        "pct_recovered": 65.38158464218482,
+        "converged": false
+      },
+      "1234": {
+        "final_m1": 398.1624755859375,
+        "drift_from_ystar_mM": 21.751677027838014,
+        "pct_recovered": 65.46646992416002,
+        "converged": false
+      },
+      "2024": {
+        "final_m1": 398.156494140625,
+        "drift_from_ystar_mM": 21.757658473150514,
+        "pct_recovered": 65.45697362549157,
+        "converged": false
+      },
+      "5555": {
+        "final_m1": 398.14129638671875,
+        "drift_from_ystar_mM": 21.772856227056764,
+        "pct_recovered": 65.43284527479312,
+        "converged": false
+      }
+    }
+  }
+}

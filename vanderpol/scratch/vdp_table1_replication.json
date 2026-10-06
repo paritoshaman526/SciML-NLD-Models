@@ -1,0 +1,83 @@
+{
+  "ground_truth": {
+    "period": 6.7,
+    "amplitude": 4.0172271949954315,
+    "self_decay_retention": 100.0,
+    "mu": 1.0
+  },
+  "proposed_seeds": {
+    "42": {
+      "checksum": "9c70d83ad50a0d75",
+      "period": 6.65,
+      "amplitude": 3.9506990909576416,
+      "retention": 99.99902233771245,
+      "amp_pct": 98.34392976029164
+    },
+    "101": {
+      "checksum": "65e8fb9ec5a763c1",
+      "period": 6.7,
+      "amplitude": 3.969898223876953,
+      "retention": 99.98704579195434,
+      "amp_pct": 98.82184977794037
+    },
+    "777": {
+      "checksum": "198459285e458958",
+      "period": 6.65,
+      "amplitude": 3.934941291809082,
+      "retention": 99.99762182324056,
+      "amp_pct": 97.95167414755981
+    },
+    "999": {
+      "checksum": "bcb3d566177b4f74",
+      "period": 6.7,
+      "amplitude": 3.968848466873169,
+      "retention": 99.98951735184639,
+      "amp_pct": 98.79571839545119
+    },
+    "1234": {
+      "checksum": "c2cac662b22d4e7a",
+      "period": 6.65,
+      "amplitude": 3.9482104778289795,
+      "retention": 99.99653673390033,
+      "amp_pct": 98.28198123191957
+    },
+    "2024": {
+      "checksum": "7843efbeb164f354",
+      "period": 6.6000000000000005,
+      "amplitude": 3.943464994430542,
+      "retention": 99.98490939378749,
+      "amp_pct": 98.16385290190257
+    },
+    "5555": {
+      "checksum": "2dfd89a889cac5fc",
+      "period": 6.6000000000000005,
+      "amplitude": 3.929620623588562,
+      "retention": 100.01333751986634,
+      "amp_pct": 97.8192278615457
+    }
+  },
+  "proposed_residual_s42": {
+    "checksum": "dc2e8d498ab02dc1",
+    "period": 6.65,
+    "amplitude": 3.9653995037078857,
+    "retention": 100.00113036095102,
+    "amp_pct": 98.70986407360502
+  },
+  "baseline_unconstrained": {
+    "checksum": "78d75875665d0c8f",
+    "period": 6.550000000000001,
+    "amplitude": 3.8327475786209106,
+    "retention": 100.00084289736732,
+    "amp_pct": 95.40778732643398
+  },
+  "ensemble_summary": {
+    "period_mean": 6.65,
+    "period_std": 0.03779644730092259,
+    "amp_mean": 3.9493833099092757,
+    "amp_std": 0.014327909632746669,
+    "retention_mean": 99.99542727890113,
+    "retention_std": 0.008908668034455914,
+    "amp_pct_mean": 98.31117629665869,
+    "amp_pct_std": 0.35666167078118155
+  }
+}

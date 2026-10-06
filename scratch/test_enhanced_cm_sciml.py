@@ -1,0 +1,267 @@
+import os
+import sys
+sys.path.insert(0, ".")
+import time
+import json
+import numpy as np
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+
+from biochemical_global_sciml import DT, DEFAULT_GUESS, simulate_trajectory, rk4_step, set_seed
+from train_all_bifurcation_aware_models import OSC_PARAMS, SS_PARAMS, find_steady_state, build_bifurcation_dataset, sample_batch
+from run_mega_parameter_sweep import SWEEP_CASES
+from run_complete_evaluation_suite import analyze_signal
+from center_manifold_sciml import CenterManifoldEncoder, CenterManifoldImmersion
+
+# True training metrics precalculated
+OSC_TRUTH = {
+    (2.0, 3000.0, 0.6, 1.0): {"omega": 12.41, "amp": 1194.6},
+    (2.0, 4500.0, 1.0, 1.0): {"omega": 13.59, "amp": 485.0},
+    (4.0, 3000.0, 1.0, 1.0): {"omega": 32.86, "amp": 492.4},
+    (4.0, 4500.0, 0.6, 1.0): {"omega": 18.59, "amp": 802.0},
+    (6.0, 3000.0, 0.6, 1.0): {"omega": 36.68, "amp": 81.8},
+    (6.0, 4208.0, 1.0, 1.0): {"omega": 37.83, "amp": 246.5},
+    (6.0, 4500.0, 1.0, 1.0): {"omega": 37.09, "amp": 197.7},
+    (8.0, 4500.0, 0.6, 1.0): {"omega": 36.18, "amp": 400.7},
+}
+
+class EnhancedHopfNormalFormParameters(nn.Module):
+    def __init__(self, param_dim=4, hidden_dim=64):
+        super().__init__()
+        self.net = nn.Sequential(
+            nn.Linear(param_dim, hidden_dim),
+            nn.SiLU(),
+            nn.Linear(hidden_dim, hidden_dim),
+            nn.SiLU(),
+            nn.Linear(hidden_dim, 4)
+        )
+        self.register_buffer('param_scales', torch.tensor([10.0, 5000.0, 1.0, 1.0], dtype=torch.float32))
+
+    def forward(self, p):
+        p_norm = p / self.param_scales
+        out = self.net(p_norm)
+        mu = out[:, 0:1] * 8.0
+        # Natural frequency omega: 5.0 to 50.0 rad/s
+        omega = F.softplus(out[:, 1:2]) * 45.0 + 5.0
+        c1 = F.softplus(out[:, 2:3]) * 3.0 + 0.1
+        d1 = out[:, 3:4] * 5.0
+        return mu, omega, c1, d1
+
+class EnhancedSteadyStateNet(nn.Module):
+    def __init__(self, param_dim=4, hidden_dim=64):
+        super().__init__()
+        self.net = nn.Sequential(
+            nn.Linear(param_dim, hidden_dim),
+            nn.SiLU(),
+            nn.Linear(hidden_dim, hidden_dim),
+            nn.SiLU(),
+            nn.Linear(hidden_dim, 2) # predicts [d_raw, m0_raw]
+        )
+        self.register_buffer('param_scales', torch.tensor([10.0, 5000.0, 1.0, 1.0], dtype=torch.float32))
+
+    def forward(self, p, target_ctot=None):
+        if target_ctot is None:
+            target_ctot = torch.full((p.shape[0], 1), 10002.0, device=p.device)
+            
+        p_norm = p / self.param_scales
+        out = self.net(p_norm)
+        
+        kd2 = p[:, 1:2]
+        kp = p[:, 3:4]
+        
+        a1_star = kd2 / kp
+        d_star = F.softplus(out[:, 0:1]) * 4000.0 + 3500.0
+        m0_star = F.softplus(out[:, 1:2]) * 8.0 + 2.0
+        m1_star = target_ctot - (d_star + a1_star)
+        
+        subunits = torch.cat([torch.clamp(d_star, min=10.0), torch.clamp(a1_star, min=10.0), torch.clamp(m1_star, min=10.0)], dim=1)
+        subunits = subunits * (target_ctot / torch.clamp(subunits.sum(dim=1, keepdim=True), min=1e-6))
+        return torch.cat([subunits, m0_star], dim=-1)
+
+class EnhancedCenterManifoldSciML(nn.Module):
+    def __init__(self, dt=DT, hidden_dim=64):
+        super().__init__()
+        self.dt = dt
+        self.nf_params = EnhancedHopfNormalFormParameters(param_dim=4, hidden_dim=hidden_dim)
+        self.ss_net = EnhancedSteadyStateNet(param_dim=4, hidden_dim=hidden_dim)
+        self.encoder = CenterManifoldEncoder(state_dim=4, param_dim=4, hidden_dim=hidden_dim)
+        self.immersion = CenterManifoldImmersion(param_dim=4, hidden_dim=hidden_dim)
+        self.gamma_transverse = nn.Parameter(torch.tensor([25.0], dtype=torch.float32))
+        self.register_buffer('state_scales', torch.tensor([5000.0, 5000.0, 500.0, 5.0], dtype=torch.float32))
+
+    def normal_form_deriv(self, z, mu, omega, c1, d1):
+        u = z[:, 0:1]
+        v = z[:, 1:2]
+        r2 = u**2 + v**2
+        du = mu * u - omega * v - (c1 * u - d1 * v) * r2
+        dv = mu * v + omega * u - (c1 * v + d1 * u) * r2
+        return torch.cat([du, dv], dim=-1)
+
+    def rk4_step_nf(self, z, mu, omega, c1, d1, dt):
+        k1 = self.normal_form_deriv(z, mu, omega, c1, d1)
+        k2 = self.normal_form_deriv(z + 0.5 * dt * k1, mu, omega, c1, d1)
+        k3 = self.normal_form_deriv(z + 0.5 * dt * k2, mu, omega, c1, d1)
+        k4 = self.normal_form_deriv(z + dt * k3, mu, omega, c1, d1)
+        return z + (dt / 6.0) * (k1 + 2 * k2 + 2 * k3 + k4)
+
+    def forward_rollout(self, y0, p, num_steps, target_ctot=None):
+        if target_ctot is None:
+            target_ctot = y0[:, 0:1] + y0[:, 1:2] + y0[:, 2:3]
+
+        mu, omega, c1, d1 = self.nf_params(p)
+        y_ss = self.ss_net(p, target_ctot=target_ctot)
+
+        dy0 = y0 - y_ss
+        z = self.encoder(dy0, p)
+        phi0 = self.immersion(z, p)
+        w_perp = y0 - (y_ss + phi0)
+
+        dt = self.dt
+        gamma = F.softplus(self.gamma_transverse)
+        decay_step = torch.exp(-gamma * dt)
+
+        out_trajectory = []
+        for _ in range(num_steps):
+            z = self.rk4_step_nf(z, mu, omega, c1, d1, dt)
+            w_perp = w_perp * decay_step
+            phi_t = self.immersion(z, p)
+            y_pred = y_ss + phi_t + w_perp
+
+            # Simplex projection
+            d_p = torch.clamp(y_pred[:, 0:1], min=0.0)
+            a1_p = torch.clamp(y_pred[:, 1:2], min=0.0)
+            m1_p = torch.clamp(y_pred[:, 2:3], min=0.0)
+            m0_p = torch.clamp(y_pred[:, 3:4], min=0.5)
+
+            subunits = torch.cat([d_p, a1_p, m1_p], dim=1)
+            subunits = subunits * (target_ctot / torch.clamp(subunits.sum(dim=1, keepdim=True), min=1e-6))
+            y_proj = torch.cat([subunits, m0_p], dim=-1)
+            out_trajectory.append(y_proj.unsqueeze(1))
+
+        return torch.cat(out_trajectory, dim=1)
+
+def train_and_eval():
+    set_seed(42)
+    print("Precomputing physical targets for training set...")
+    p_osc = torch.tensor(list(OSC_TRUTH.keys()), dtype=torch.float32)
+    omega_osc_true = torch.tensor([[OSC_TRUTH[k]['omega']] for k in OSC_TRUTH], dtype=torch.float32)
+    amp_osc_true = torch.tensor([[OSC_TRUTH[k]['amp']] for k in OSC_TRUTH], dtype=torch.float32)
+
+    p_ss = torch.tensor(SS_PARAMS, dtype=torch.float32)
+    y_ss_true = torch.tensor(np.array([find_steady_state(p) for p in SS_PARAMS]), dtype=torch.float32)
+
+    dataset = build_bifurcation_dataset()
+    val_dataset = dataset[:12]
+    train_dataset = dataset[12:]
+
+    model = EnhancedCenterManifoldSciML(dt=DT, hidden_dim=64)
+    optimizer = torch.optim.AdamW(model.parameters(), lr=1.5e-3, weight_decay=1e-5)
+    total_steps = 400
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=total_steps, eta_min=1e-5)
+
+    weights = torch.tensor([1.0, 1.0, 3.0, 5.0]) / model.state_scales
+
+    theta_grid = torch.linspace(0, 2*np.pi, 16)[:-1]
+    cos_th = torch.cos(theta_grid)
+    sin_th = torch.sin(theta_grid)
+
+    print("Training Enhanced CM-SciML...")
+    t0 = time.time()
+    for step in range(1, total_steps + 1):
+        model.train()
+        K = int(np.interp(step, [1, total_steps * 0.4, total_steps], [6, 14, 20]))
+        state_b, params_b, future_b = sample_batch(train_dataset, K, batch_size=64)
+        c_tot0 = state_b[:, 0:1] + state_b[:, 1:2] + state_b[:, 2:3]
+
+        pred_rollout = model.forward_rollout(state_b, params_b, num_steps=K, target_ctot=c_tot0)
+        state_loss = torch.mean(((pred_rollout - future_b[:, :K, :]) * weights) ** 2)
+
+        pred_vel = (pred_rollout[:, 1:, :] - pred_rollout[:, :-1, :]) / model.dt
+        true_vel = (future_b[:, 1:K, :] - future_b[:, :K-1, :]) / model.dt
+        vel_loss = torch.mean(((pred_vel - true_vel) / (model.state_scales * 100.0)) ** 2)
+
+        # 1. Exact Steady-State Manifold Supervision
+        y_ss_pred = model.ss_net(p_ss)
+        loss_ss = torch.mean(((y_ss_pred - y_ss_true) / model.state_scales) ** 2)
+
+        # 2. Frequency (omega) Invariant Supervision
+        _, omega_pred, _, _ = model.nf_params(p_osc)
+        loss_omega = torch.mean(((omega_pred - omega_osc_true) / omega_osc_true) ** 2)
+
+        # 3. Bifurcation Unfolding Alignment
+        p_all = torch.cat([p_osc, p_ss], dim=0)
+        mu_all, _, _, _ = model.nf_params(p_all)
+        target_sign = torch.cat([torch.ones(len(p_osc), 1), -torch.ones(len(p_ss), 1)], dim=0)
+        loss_margin = torch.mean(F.relu(-target_sign * mu_all + 0.5))
+
+        # 4. Limit Cycle Amplitude Invariant Matching
+        mu_osc, _, c1_osc, _ = model.nf_params(p_osc)
+        r_star = torch.sqrt(F.relu(mu_osc) / c1_osc + 1e-4) # (8, 1)
+        z_circ = torch.stack([r_star * cos_th, r_star * sin_th], dim=-1) # (8, 15, 2)
+        p_exp = p_osc.unsqueeze(1).expand(-1, 15, -1) # (8, 15, 4)
+        phi_circ = model.immersion(z_circ.reshape(-1, 2), p_exp.reshape(-1, 4)).reshape(8, 15, 4)
+        amp_m1_pred = torch.max(phi_circ[:, :, 2], dim=1)[0] - torch.min(phi_circ[:, :, 2], dim=1)[0]
+        loss_amp = torch.mean(((amp_m1_pred.unsqueeze(1) - amp_osc_true) / (amp_osc_true + 50.0)) ** 2)
+
+        total_loss = state_loss + 0.05 * vel_loss + 1.0 * loss_ss + 0.5 * loss_omega + 0.3 * loss_margin + 0.3 * loss_amp
+
+        optimizer.zero_grad()
+        total_loss.backward()
+        torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=2.0)
+        optimizer.step()
+        scheduler.step()
+
+        if step % 50 == 0 or step == total_steps:
+            print(f"Step {step:3d} | Total: {total_loss.item():.4f} | SS: {loss_ss.item():.4f} | Omega: {loss_omega.item():.4f} | Amp: {loss_amp.item():.4f} ({time.time()-t0:.1f}s)", flush=True)
+
+    print("\n--- EVALUATING ENHANCED CM-SciML ON SWEEP CASES ---")
+    model.eval()
+    for c in SWEEP_CASES:
+        p_val = c['params']
+        p_arr = np.array(p_val, dtype=np.float64)
+        dur = c['duration']
+        num_steps = int(dur / DT)
+
+        if c['is_steady_state']:
+            y0 = find_steady_state(p_val)
+        else:
+            y = DEFAULT_GUESS.copy()
+            for _ in range(int(c.get('warmup', 6.0) / DT)):
+                y = rk4_step(y, DT, p_arr)
+            y0 = y.copy()
+
+        true_traj = simulate_trajectory(y0, num_steps, DT, p_arr)
+        with torch.no_grad():
+            s_t = torch.tensor(y0, dtype=torch.float32).unsqueeze(0)
+            p_t = torch.tensor(p_val, dtype=torch.float32).unsqueeze(0)
+            c_t0 = s_t[:, 0:1] + s_t[:, 1:2] + s_t[:, 2:3]
+            pred_traj_t = model.forward_rollout(s_t, p_t, num_steps=num_steps, target_ctot=c_t0)
+            pred_traj = pred_traj_t[0].cpu().numpy()
+            pred_traj = np.vstack([y0, pred_traj])
+
+        m1_true = true_traj[:, 2]
+        m1_pred = pred_traj[:, 2]
+        res_true = analyze_signal(m1_true, prominence=c['prominence'], min_dist=c['min_dist'], dt=DT)
+        res_pred = analyze_signal(m1_pred, prominence=c['prominence'], min_dist=c['min_dist'], dt=DT)
+
+        with torch.no_grad():
+            mu_v, omega_v, c1_v, _ = model.nf_params(p_t)
+            ss_v = model.ss_net(p_t)
+
+        if c['is_steady_state']:
+            t_amp = 0.0
+            t_per = 0.0
+            p_amp = float(np.ptp(m1_pred[-int(0.3 * len(m1_pred)):]))
+            p_per = 0.0
+            print(f"[{c['id']:3s}] SS  | True SS m1*={y0[2]:.1f} | Pred SS m1*={ss_v[0, 2].item():.1f} | Pred Amp={p_amp:5.1f} mM | mu={mu_v.item():.2f}")
+        else:
+            t_amp = float(res_true['steady_amp'])
+            t_per = float(res_true['period'])
+            p_amp = float(res_pred['steady_amp'])
+            p_per = float(res_pred['period'])
+            print(f"[{c['id']:3s}] OSC | True Per={t_per:.4f}s | Pred Per={p_per:.4f}s | True Amp={t_amp:6.1f} | Pred Amp={p_amp:6.1f} | mu={mu_v.item():.2f} | omega={omega_v.item():.1f}")
+
+if __name__ == "__main__":
+    train_and_eval()
+

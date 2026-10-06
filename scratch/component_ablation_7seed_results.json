@@ -1,0 +1,2094 @@
+{
+  "Unified_Full": {
+    "label": "Full Unified SciML (proposed)",
+    "per_seed": {
+      "42": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.236325263609615,
+          "pct_recovered": 43.380061584344695
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.2334324887197,
+          "pct_recovered": 71.7295075846501
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.63636582052277,
+          "pct_recovered": 13.356215671782945
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 18.03198880524542,
+          "pct_recovered": 57.52287120062143
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.49094299717399,
+          "pct_recovered": 63.81058715129997
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.807219020025514,
+          "pct_recovered": 65.3782900079529
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 538.18896484375,
+          "amp_err_pct": 25.374616564693486,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 841.937081053853,
+          "amp_err_pct": 0.0028831793305299468,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.76678466796875,
+          "amp_err_pct": 0.0724063857463533,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 142.0176124572754,
+          "amp_err_pct": 0.1199848209183439,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 813.0120605230331,
+          "amp_err_pct": 0.03826672275793144,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.788711547851562,
+          "amp_err_pct": 0.020628122073522815,
+          "status": "PASSED"
+        }
+      },
+      "101": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.23458576165649,
+          "pct_recovered": 43.38412533957114
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.215762810985325,
+          "pct_recovered": 71.76725519781071
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.664533545132144,
+          "pct_recovered": 13.2895999417177
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 17.93958157868292,
+          "pct_recovered": 57.740550664993485
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.42807678623649,
+          "pct_recovered": 63.92731271261225
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.87615822900989,
+          "pct_recovered": 65.26884032074857
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 563.5866088867188,
+          "amp_err_pct": 21.852974448508093,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 842.1399389579892,
+          "amp_err_pct": 0.021210314107852464,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.40876960754395,
+          "amp_err_pct": 0.04592703269100594,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.72278594970703,
+          "amp_err_pct": 0.08786281820056266,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 814.2845920026302,
+          "amp_err_pct": 0.19484723336824497,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.76677703857422,
+          "amp_err_pct": 0.05062862383023558,
+          "status": "PASSED"
+        }
+      },
+      "777": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.252743720640865,
+          "pct_recovered": 43.34170543852315
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.258914666454075,
+          "pct_recovered": 71.67507018052382
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.638044287319644,
+          "pct_recovered": 13.352246153740044
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 18.061682408761044,
+          "pct_recovered": 57.45292334103292
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.52799133701774,
+          "pct_recovered": 63.74179839817711
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.792204371588014,
+          "pct_recovered": 65.40212765563086
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 533.1240234375,
+          "amp_err_pct": 26.07692229596857,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 842.0057599470019,
+          "amp_err_pct": 0.0052738331777307,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.66666984558105,
+          "amp_err_pct": 0.039315796888644325,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.99795150756836,
+          "amp_err_pct": 0.1061241880561699,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 812.2561513185501,
+          "amp_err_pct": 0.0547452389190122,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.801414489746094,
+          "amp_err_pct": 0.061895072309960296,
+          "status": "PASSED"
+        }
+      },
+      "999": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.181881904234615,
+          "pct_recovered": 43.507249993537336
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.18014879731345,
+          "pct_recovered": 71.84333717459558
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.590619970913394,
+          "pct_recovered": 13.464403081715549
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 17.927527135323544,
+          "pct_recovered": 57.76894676420979
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.426154178814613,
+          "pct_recovered": 63.930882474924225
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.83398293604114,
+          "pct_recovered": 65.33579891646188
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 552.7908935546875,
+          "amp_err_pct": 23.34991037387614,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 841.9940789192915,
+          "amp_err_pct": 0.003886474052172231,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.1731815338135,
+          "amp_err_pct": 0.12379510358869465,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.53410720825195,
+          "amp_err_pct": 0.22087809992271823,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 813.2516077756882,
+          "amp_err_pct": 0.06774216736374833,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.74652862548828,
+          "amp_err_pct": 0.11640789465756594,
+          "status": "PASSED"
+        }
+      },
+      "1234": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.207028388609615,
+          "pct_recovered": 43.44850377763222
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.216312127391575,
+          "pct_recovered": 71.76608169688343
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.57746689474152,
+          "pct_recovered": 13.495509668560747
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 18.009497350167294,
+          "pct_recovered": 57.575853289538934
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.51242737217399,
+          "pct_recovered": 63.77069647403597
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.783354273931764,
+          "pct_recovered": 65.41617830161992
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 530.3057861328125,
+          "amp_err_pct": 26.467699612510252,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 841.9162223413587,
+          "amp_err_pct": 0.005360574799818217,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.6907539367676,
+          "amp_err_pct": 0.047276224130662486,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.7740478515625,
+          "amp_err_pct": 0.05172405521998551,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 811.8459803164005,
+          "amp_err_pct": 0.1052153341456233,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.77373504638672,
+          "amp_err_pct": 0.028024744781808573,
+          "status": "PASSED"
+        }
+      },
+      "2024": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.22256183587524,
+          "pct_recovered": 43.41221515639956
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.240359978954075,
+          "pct_recovered": 71.71470843406726
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.572004248257144,
+          "pct_recovered": 13.508428645463965
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 17.993506139229794,
+          "pct_recovered": 57.613523051537264
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.491339725689613,
+          "pct_recovered": 63.80985053368005
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.743498316900514,
+          "pct_recovered": 65.47945465907404
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 512.3084106445312,
+          "amp_err_pct": 28.96321909428205,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 841.8656838610768,
+          "amp_err_pct": 0.011363045091725917,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.218297958374,
+          "amp_err_pct": 0.1088829355374792,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.5948944091797,
+          "amp_err_pct": 0.1780241642108938,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 811.9351404905319,
+          "amp_err_pct": 0.09424448916816287,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.722930908203125,
+          "amp_err_pct": 0.19306776077246152,
+          "status": "PASSED"
+        }
+      },
+      "5555": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.22079181634399,
+          "pct_recovered": 43.416350205577345
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.233463006297825,
+          "pct_recovered": 71.72944239015413
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.61335556661652,
+          "pct_recovered": 13.410634155498203
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 18.01123685212042,
+          "pct_recovered": 57.57175562458874
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.50870422764274,
+          "pct_recovered": 63.777609347084564
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.79717873682239,
+          "pct_recovered": 65.39423022357495
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 529.8818969726562,
+          "amp_err_pct": 26.526476163456287,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 841.913159660995,
+          "amp_err_pct": 0.005724330254947291,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.31525802612305,
+          "amp_err_pct": 0.07683507627969878,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.72433471679688,
+          "amp_err_pct": 0.08677096392387608,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 812.2028661668301,
+          "amp_err_pct": 0.06130178891250601,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.757736206054688,
+          "amp_err_pct": 0.07999879562013253,
+          "status": "PASSED"
+        }
+      }
+    }
+  },
+  "NoFiLM": {
+    "label": "w/o FiLM (concat [s,p])",
+    "per_seed": {
+      "42": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.227047919859615,
+          "pct_recovered": 43.401734945552406
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.2339207699697,
+          "pct_recovered": 71.72846447271475
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.623578955288394,
+          "pct_recovered": 13.386456181964235
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 18.029883092354794,
+          "pct_recovered": 57.52783153187694
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.522528690533363,
+          "pct_recovered": 63.75194105617463
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.78014992822864,
+          "pct_recovered": 65.42126560447802
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 529.8984375,
+          "amp_err_pct": 26.524182650813177,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 841.9446114972234,
+          "amp_err_pct": 0.0019887863380357905,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.5449028015137,
+          "amp_err_pct": 0.0009314222099286993,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.8539695739746,
+          "amp_err_pct": 0.00461939047178946,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 812.554451495409,
+          "amp_err_pct": 0.01804045419926415,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.780364990234375,
+          "amp_err_pct": 0.006486618802550815,
+          "status": "PASSED"
+        }
+      },
+      "101": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.225155830015865,
+          "pct_recovered": 43.40615517053556
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.231815057079075,
+          "pct_recovered": 71.73296289293596
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.61817734396027,
+          "pct_recovered": 13.399230812756812
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 18.01996487946417,
+          "pct_recovered": 57.55119541097896
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.513617557720863,
+          "pct_recovered": 63.76848662117618
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.783232203619264,
+          "pct_recovered": 65.41637210363356
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 534.4346923828125,
+          "amp_err_pct": 25.89518469265466,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 841.95169056952,
+          "amp_err_pct": 0.0011480028218365111,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.5047664642334,
+          "amp_err_pct": 0.01419754008858461,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.81393432617188,
+          "amp_err_pct": 0.023604773650933955,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 812.7016316354275,
+          "amp_err_pct": 6.954295623652234e-05,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.777565002441406,
+          "amp_err_pct": 0.015582697323134932,
+          "status": "PASSED"
+        }
+      },
+      "777": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.227231025328365,
+          "pct_recovered": 43.40130718184436
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.2339207699697,
+          "pct_recovered": 71.72846447271475
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.62147324239777,
+          "pct_recovered": 13.391436122781675
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 18.026098912667294,
+          "pct_recovered": 57.53674575036509
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.522345585064613,
+          "pct_recovered": 63.75228103353767
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.779509059088014,
+          "pct_recovered": 65.42228306504964
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 536.3533325195312,
+          "amp_err_pct": 25.629145689200598,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 841.9586488083005,
+          "amp_err_pct": 0.00032157073818403226,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.53154945373535,
+          "amp_err_pct": 0.0053450557825404955,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.8342742919922,
+          "amp_err_pct": 0.009265446056616541,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 812.7756606638432,
+          "amp_err_pct": 0.009178553817785243,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.78295135498047,
+          "amp_err_pct": 0.001915480975318437,
+          "status": "PASSED"
+        }
+      },
+      "999": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.22781085931274,
+          "pct_recovered": 43.39995259676888
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.23410387543845,
+          "pct_recovered": 71.72807330573899
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.618574072475894,
+          "pct_recovered": 13.398292563037584
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 18.024634068917294,
+          "pct_recovered": 57.54019641558632
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.52109436436149,
+          "pct_recovered": 63.75460421218515
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.774992457525514,
+          "pct_recovered": 65.4294537395544
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 531.5676879882812,
+          "amp_err_pct": 26.29272406307769,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 841.9429143294692,
+          "amp_err_pct": 0.002190359455549406,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.52429962158203,
+          "amp_err_pct": 0.007741316489510564,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.82959747314453,
+          "amp_err_pct": 0.01256252325666027,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 812.6129123866558,
+          "amp_err_pct": 0.010847047710761759,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.77880859375,
+          "amp_err_pct": 0.011542749642330541,
+          "status": "PASSED"
+        }
+      },
+      "1234": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.22305011712524,
+          "pct_recovered": 43.4110744531781
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.230594353954075,
+          "pct_recovered": 71.73557067277434
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.625104834194644,
+          "pct_recovered": 13.382847529197972
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 18.02338284821417,
+          "pct_recovered": 57.54314385879611
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.519599003033363,
+          "pct_recovered": 63.75738069398336
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.786955348150514,
+          "pct_recovered": 65.41046114221747
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 547.59521484375,
+          "amp_err_pct": 24.07034416449267,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 841.9927055761218,
+          "amp_err_pct": 0.003723361676598535,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.54775619506836,
+          "amp_err_pct": 1.1699604758809399e-05,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.83816146850586,
+          "amp_err_pct": 0.006525053179908094,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 813.0308382809162,
+          "amp_err_pct": 0.04057725964019323,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.785263061523438,
+          "amp_err_pct": 0.00942532236969715,
+          "status": "PASSED"
+        }
+      },
+      "2024": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.230038642515865,
+          "pct_recovered": 43.39474813832097
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.23532457856345,
+          "pct_recovered": 71.7254655259006
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.622724463100894,
+          "pct_recovered": 13.388477027513346
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 18.02783841462042,
+          "pct_recovered": 57.53264808541489
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.52164368076774,
+          "pct_recovered": 63.75358428009601
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.77801369775989,
+          "pct_recovered": 65.42465713971674
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 523.5158081054688,
+          "amp_err_pct": 27.40919924722488,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 841.9273877218366,
+          "amp_err_pct": 0.004034459248999639,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.54635429382324,
+          "amp_err_pct": 0.0004516657253182754,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.8453712463379,
+          "amp_err_pct": 0.0014422832711946827,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 812.3259032964706,
+          "amp_err_pct": 0.04616250403662303,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.782669067382812,
+          "amp_err_pct": 0.0009984376367309375,
+          "status": "PASSED"
+        }
+      },
+      "5555": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.228573798765865,
+          "pct_recovered": 43.39817024798535
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.234988885204075,
+          "pct_recovered": 71.72618266535615
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.625532080288394,
+          "pct_recovered": 13.381837106423411
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 18.029761022042294,
+          "pct_recovered": 57.528119087312035
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.524420780377113,
+          "pct_recovered": 63.748427956756494
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.779264918463014,
+          "pct_recovered": 65.42267066907692
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 533.0252685546875,
+          "amp_err_pct": 26.09061566665693,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 841.9585168883204,
+          "amp_err_pct": 0.00033723891333964086,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.5535430908203,
+          "amp_err_pct": 0.0019244212529953744,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.8530731201172,
+          "amp_err_pct": 0.003987405853510279,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 812.6622324287891,
+          "amp_err_pct": 0.0047783904677957114,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.785232543945312,
+          "amp_err_pct": 0.00932618254930931,
+          "status": "PASSED"
+        }
+      }
+    }
+  },
+  "NoSoftplus": {
+    "label": "w/o Softplus (unbounded mod)",
+    "per_seed": {
+      "42": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.236142158140865,
+          "pct_recovered": 43.38048934805274
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.233524041454075,
+          "pct_recovered": 71.72931200116221
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.636762549038394,
+          "pct_recovered": 13.355277422063716
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 18.031592076729794,
+          "pct_recovered": 57.5238057557855
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.49027161045524,
+          "pct_recovered": 63.81183373496447
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.80688332666614,
+          "pct_recovered": 65.3788229634904
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 538.1543579101562,
+          "amp_err_pct": 25.379415168636815,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 841.9366542100906,
+          "amp_err_pct": 0.00293387569078437,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.76737213134766,
+          "amp_err_pct": 0.07260055788467132,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 142.01670837402344,
+          "amp_err_pct": 0.11934745770756874,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 813.0099095106125,
+          "amp_err_pct": 0.03800204826574378,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.788558959960938,
+          "amp_err_pct": 0.02013242297158363,
+          "status": "PASSED"
+        }
+      },
+      "101": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.23452472650024,
+          "pct_recovered": 43.38426792747382
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.2159764340322,
+          "pct_recovered": 71.76679883633899
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.66438095724152,
+          "pct_recovered": 13.289960806994328
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 17.939428990792294,
+          "pct_recovered": 57.74091010928737
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.42832092686149,
+          "pct_recovered": 63.92685940946152
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.876493922369264,
+          "pct_recovered": 65.26830736521106
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 563.6170043945312,
+          "amp_err_pct": 21.8487598016584,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 842.1403660550714,
+          "amp_err_pct": 0.021261040554967574,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.41011238098145,
+          "amp_err_pct": 0.04548321066056476,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.72345733642578,
+          "amp_err_pct": 0.08738950206091528,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 814.2842199504375,
+          "amp_err_pct": 0.1948014536580855,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.767364501953125,
+          "amp_err_pct": 0.048720182287769705,
+          "status": "PASSED"
+        }
+      },
+      "777": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.252438544859615,
+          "pct_recovered": 43.34241837803656
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.258914666454075,
+          "pct_recovered": 71.67507018052382
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.63813584005402,
+          "pct_recovered": 13.35202963457407
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 18.06165189118292,
+          "pct_recovered": 57.4529952298917
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.52756409092399,
+          "pct_recovered": 63.74259167869087
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.79266213525989,
+          "pct_recovered": 65.40140089807971
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 532.97314453125,
+          "amp_err_pct": 26.097843193583913,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 842.0060083195567,
+          "amp_err_pct": 0.00530333245972479,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.6683406829834,
+          "amp_err_pct": 0.03986805271061374,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 142.0001335144043,
+          "amp_err_pct": 0.1076624655100239,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 812.2534654140472,
+          "amp_err_pct": 0.05507572999546311,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.800918579101562,
+          "amp_err_pct": 0.06028405022865793,
+          "status": "PASSED"
+        }
+      },
+      "999": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.18191242181274,
+          "pct_recovered": 43.50717869958599
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.1800877621572,
+          "pct_recovered": 71.84346756358751
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.59107773458527,
+          "pct_recovered": 13.463320485885665
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 17.927466100167294,
+          "pct_recovered": 57.76909054192734
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.42612366123649,
+          "pct_recovered": 63.930939137818065
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.83379983057239,
+          "pct_recovered": 65.33608961948234
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 552.7220458984375,
+          "amp_err_pct": 23.359456802885084,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 841.9945079088211,
+          "amp_err_pct": 0.00393742526583481,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.1732425689697,
+          "amp_err_pct": 0.12377492986003825,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.53426361083984,
+          "amp_err_pct": 0.2207678387765504,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 813.2519736886024,
+          "amp_err_pct": 0.06778719165735118,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.746475219726562,
+          "amp_err_pct": 0.11658138934324466,
+          "status": "PASSED"
+        }
+      },
+      "1234": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.207272529234615,
+          "pct_recovered": 43.44793342602149
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.21652575043845,
+          "pct_recovered": 71.76562533541173
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.57722275411652,
+          "pct_recovered": 13.496087053003347
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 18.00903958649542,
+          "pct_recovered": 57.57693162242057
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.512152713970863,
+          "pct_recovered": 63.77120644008054
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.78295754541614,
+          "pct_recovered": 65.41680815816426
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 530.32373046875,
+          "amp_err_pct": 26.4652114475026,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 841.9159163162112,
+          "amp_err_pct": 0.005396921497341173,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.69038009643555,
+          "amp_err_pct": 0.04715266004264193,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.77371215820312,
+          "amp_err_pct": 0.0519607132898092,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 811.8456702232361,
+          "amp_err_pct": 0.10525349001587397,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.773590087890625,
+          "amp_err_pct": 0.0284956589286508,
+          "status": "PASSED"
+        }
+      },
+      "2024": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.222409247984615,
+          "pct_recovered": 43.41257162615627
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.240359978954075,
+          "pct_recovered": 71.71470843406726
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.57197373067902,
+          "pct_recovered": 13.508500818519298
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 17.993628209542294,
+          "pct_recovered": 57.61323549610218
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.491889042095863,
+          "pct_recovered": 63.808830601590905
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.743864527838014,
+          "pct_recovered": 65.47887325303311
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 512.2688598632812,
+          "amp_err_pct": 28.968703213074427,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 841.8655023276806,
+          "amp_err_pct": 0.011384605867037474,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.21832847595215,
+          "amp_err_pct": 0.10887284867315099,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.59478759765625,
+          "amp_err_pct": 0.17809946450583772,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 811.9353901743889,
+          "amp_err_pct": 0.09421376645014651,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.72309112548828,
+          "amp_err_pct": 0.19254727671542538,
+          "status": "PASSED"
+        }
+      },
+      "5555": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.22128009759399,
+          "pct_recovered": 43.41520950235589
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.2331883480947,
+          "pct_recovered": 71.73002914061777
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.612958838100894,
+          "pct_recovered": 13.41157240521743
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 18.01105374665167,
+          "pct_recovered": 57.57218695774139
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.508734745220863,
+          "pct_recovered": 63.77755268419072
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.797087184088014,
+          "pct_recovered": 65.39437557508518
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 529.86279296875,
+          "amp_err_pct": 26.52912512824334,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 841.9124878123403,
+          "amp_err_pct": 0.0058041259189302264,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.31501388549805,
+          "amp_err_pct": 0.07691577119432445,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.72423934936523,
+          "amp_err_pct": 0.08683819633007599,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 812.2036079466343,
+          "amp_err_pct": 0.06121051552369878,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.75775146484375,
+          "amp_err_pct": 0.0799492257099386,
+          "status": "PASSED"
+        }
+      }
+    }
+  },
+  "NoMassProjection": {
+    "label": "w/o Mass Projection",
+    "per_seed": {
+      "42": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.242856025328365,
+          "pct_recovered": 43.364804678757686
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.259586053172825,
+          "pct_recovered": 71.67363590161271
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.60395615255402,
+          "pct_recovered": 13.43286345653839
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 18.03754300446417,
+          "pct_recovered": 57.5097874283243
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.515448612408363,
+          "pct_recovered": 63.76508684754572
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.74322365869739,
+          "pct_recovered": 65.47989071360473
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 569.3480224609375,
+          "amp_err_pct": 21.054095754980292,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 841.9778290465474,
+          "amp_err_pct": 0.0019564718469276513,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.4420623779297,
+          "amp_err_pct": 0.03492289413795082,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.8076629638672,
+          "amp_err_pct": 0.028025976682640223,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 814.1639679372311,
+          "amp_err_pct": 0.18000486753689124,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.76329803466797,
+          "amp_err_pct": 0.061930563354449096,
+          "status": "PASSED"
+        }
+      },
+      "101": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.260251044859615,
+          "pct_recovered": 43.324167126493215
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.2801854184072,
+          "pct_recovered": 71.62962961683996
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.641340185757144,
+          "pct_recovered": 13.344451463764917
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 18.12213773102667,
+          "pct_recovered": 57.31051151179876
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.627020878033363,
+          "pct_recovered": 63.55792730766336
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.739103785650514,
+          "pct_recovered": 65.48643153156515
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 543.7091674804688,
+          "amp_err_pct": 24.609184225282135,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 841.9535953849554,
+          "amp_err_pct": 0.0009217673276377714,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.6632709503174,
+          "amp_err_pct": 0.03819237237409009,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.92618560791016,
+          "amp_err_pct": 0.05553045774261147,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 813.3487440347672,
+          "amp_err_pct": 0.07969444146401497,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.830352783203125,
+          "amp_err_pct": 0.15590440699272745,
+          "status": "PASSED"
+        }
+      },
+      "777": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.232113837828365,
+          "pct_recovered": 43.38990014962978
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.2378270199697,
+          "pct_recovered": 71.72011957723191
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.63050644552277,
+          "pct_recovered": 13.370072898405393
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 18.047217076729794,
+          "pct_recovered": 57.48699866009248
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.516913456158363,
+          "pct_recovered": 63.76236702864135
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.79852151025989,
+          "pct_recovered": 65.39209840142489
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 588.722900390625,
+          "amp_err_pct": 18.367571524713036,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 842.0145964771509,
+          "amp_err_pct": 0.0063233504842866535,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.615234375,
+          "amp_err_pct": 0.022315017492469155,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.92966079711914,
+          "amp_err_pct": 0.05798040662453629,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 813.1976498961449,
+          "amp_err_pct": 0.06110284058417392,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.78772735595703,
+          "amp_err_pct": 0.01743086286601505,
+          "status": "PASSED"
+        }
+      },
+      "999": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.242550849547115,
+          "pct_recovered": 43.3655176182711
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.2495457699697,
+          "pct_recovered": 71.69508489078342
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.64179794942902,
+          "pct_recovered": 13.343368867935034
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 18.059912389229794,
+          "pct_recovered": 57.4570928948419
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.538458866314613,
+          "pct_recovered": 63.72236302558968
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.76421975244739,
+          "pct_recovered": 65.4465567672583
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 549.8367309570312,
+          "amp_err_pct": 23.759535117193465,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 841.9758885800838,
+          "amp_err_pct": 0.0017260020695413147,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.739315032959,
+          "amp_err_pct": 0.06332694699292449,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 142.03102111816406,
+          "amp_err_pct": 0.12943769723005166,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 813.4830521941185,
+          "amp_err_pct": 0.09622058679522838,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.794815063476562,
+          "amp_err_pct": 0.04045608615109037,
+          "status": "PASSED"
+        }
+      },
+      "1234": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.20596027337524,
+          "pct_recovered": 43.45099906592915
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.22092028168845,
+          "pct_recovered": 71.75623732799355
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.581830908413394,
+          "pct_recovered": 13.485188921649227
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 18.03284329743292,
+          "pct_recovered": 57.52085831257572
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.539435428814613,
+          "pct_recovered": 63.72054981298676
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.746122828619264,
+          "pct_recovered": 65.47528791578074
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 522.7029418945312,
+          "amp_err_pct": 27.52191142944219,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 841.8898898437619,
+          "amp_err_pct": 0.008488093349144177,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.80072593688965,
+          "amp_err_pct": 0.08362487016638287,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.80707931518555,
+          "amp_err_pct": 0.02843743900858369,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 812.0239278376102,
+          "amp_err_pct": 0.08331951924469914,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.79167938232422,
+          "amp_err_pct": 0.03026946960624004,
+          "status": "PASSED"
+        }
+      },
+      "2024": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.242306708922115,
+          "pct_recovered": 43.366087969881825
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.241580682079075,
+          "pct_recovered": 71.71210065422888
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.630536963100894,
+          "pct_recovered": 13.370000725350073
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 17.94769925446417,
+          "pct_recovered": 57.72142822855921
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.450812381939613,
+          "pct_recovered": 63.88509885670077
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.831144801275514,
+          "pct_recovered": 65.34030481327906
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 516.1346435546875,
+          "amp_err_pct": 28.43267291685142,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 842.1294831559062,
+          "amp_err_pct": 0.01996847539344357,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.0870018005371,
+          "amp_err_pct": 0.15227977802253537,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.56425857543945,
+          "amp_err_pct": 0.1996219023785538,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 812.7223935425282,
+          "amp_err_pct": 0.0026242224020426703,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.7264404296875,
+          "amp_err_pct": 0.1816666814278602,
+          "status": "PASSED"
+        }
+      },
+      "5555": {
+        "X1": {
+          "regime": "Stable Focus",
+          "drift_mM": 24.204525947203365,
+          "pct_recovered": 43.45434988164219
+        },
+        "X2": {
+          "regime": "Stable Focus",
+          "drift_mM": 13.21835680512595,
+          "pct_recovered": 71.76171366565414
+        },
+        "X3": {
+          "regime": "Stable Focus",
+          "drift_mM": 36.60969345724152,
+          "pct_recovered": 13.419294922137237
+        },
+        "X4": {
+          "regime": "Stable Focus",
+          "drift_mM": 17.993933385323544,
+          "pct_recovered": 57.61251660751441
+        },
+        "X5": {
+          "regime": "Stable Focus",
+          "drift_mM": 19.49393371983024,
+          "pct_recovered": 63.805034187703555
+        },
+        "X6": {
+          "regime": "Stable Focus",
+          "drift_mM": 21.802214137213014,
+          "pct_recovered": 65.38623589051222
+        },
+        "X7": {
+          "regime": "Limit Cycle",
+          "gt_amp": 721.1875370936102,
+          "pred_amp": 527.7202758789062,
+          "amp_err_pct": 26.826206952269043,
+          "status": "PASSED"
+        },
+        "X8": {
+          "regime": "Limit Cycle",
+          "gt_amp": 841.9613563096492,
+          "pred_amp": 841.9607350900769,
+          "amp_err_pct": 7.378243284274199e-05,
+          "status": "PASSED"
+        },
+        "X9": {
+          "regime": "Limit Cycle",
+          "gt_amp": 302.5477207981808,
+          "pred_amp": 302.3545551300049,
+          "amp_err_pct": 0.0638463471700686,
+          "status": "PASSED"
+        },
+        "X10": {
+          "regime": "Limit Cycle",
+          "gt_amp": 141.84741708790517,
+          "pred_amp": 141.71625518798828,
+          "amp_err_pct": 0.0924668933771327,
+          "status": "PASSED"
+        },
+        "X11": {
+          "regime": "Limit Cycle",
+          "gt_amp": 812.7010664590805,
+          "pred_amp": 812.1952364742756,
+          "amp_err_pct": 0.06224059567299376,
+          "status": "PASSED"
+        },
+        "X12": {
+          "regime": "Limit Cycle",
+          "gt_amp": 30.78236172469788,
+          "pred_amp": 30.76653289794922,
+          "amp_err_pct": 0.051421742393338285,
+          "status": "PASSED"
+        }
+      }
+    }
+  }
+}

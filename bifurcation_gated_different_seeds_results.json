@@ -1,0 +1,314 @@
+{
+  "2026": {
+    "X1": {
+      "regime": "steady_state",
+      "m1_ptp": 1.5313269386751927e-05,
+      "gate": 0.014768336899578571,
+      "is_flat": true,
+      "status": "PERFECT FLAT"
+    },
+    "X2": {
+      "regime": "steady_state",
+      "m1_ptp": 1.6287475773424376e-05,
+      "gate": 0.011982412077486515,
+      "is_flat": true,
+      "status": "PERFECT FLAT"
+    },
+    "X3": {
+      "regime": "steady_state",
+      "m1_ptp": 3.37813105488749e-07,
+      "gate": 0.011204165406525135,
+      "is_flat": true,
+      "status": "PERFECT FLAT"
+    },
+    "X4": {
+      "regime": "steady_state",
+      "m1_ptp": 1.921051023145992e-06,
+      "gate": 0.08209783583879471,
+      "is_flat": true,
+      "status": "PERFECT FLAT"
+    },
+    "X5": {
+      "regime": "steady_state",
+      "m1_ptp": 1.3921562128871301e-05,
+      "gate": 0.016769088804721832,
+      "is_flat": true,
+      "status": "PERFECT FLAT"
+    },
+    "X6": {
+      "regime": "steady_state",
+      "m1_ptp": 4.8538913688389584e-06,
+      "gate": 0.01068106759339571,
+      "is_flat": true,
+      "status": "PERFECT FLAT"
+    },
+    "X7": {
+      "regime": "limit_cycle",
+      "m1_ptp": 891.3573608398438,
+      "amp": 871.8503074645996,
+      "amp_ratio": 1.0,
+      "period": 0.1695,
+      "period_err_pct": 0.0,
+      "m0_min": 0.0,
+      "gate": 0.9860261678695679
+    },
+    "X8": {
+      "regime": "limit_cycle",
+      "m1_ptp": 994.809814453125,
+      "amp": 994.8095703125,
+      "amp_ratio": 1.0,
+      "period": 0.38795,
+      "period_err_pct": 0.0,
+      "m0_min": 0.050534295377583034,
+      "gate": 0.9858679175376892
+    },
+    "X9": {
+      "regime": "limit_cycle",
+      "m1_ptp": 89.896333298845,
+      "amp": 36.64580535888672,
+      "amp_ratio": 1.0,
+      "period": 0.23465,
+      "period_err_pct": 0.0,
+      "m0_min": 1.9542590991226563,
+      "gate": 0.985889196395874
+    },
+    "X10": {
+      "regime": "limit_cycle",
+      "m1_ptp": 179.5876693725586,
+      "amp": 43.715596516927086,
+      "amp_ratio": 1.0,
+      "period": 0.226775,
+      "period_err_pct": 0.0,
+      "m0_min": 1.3705724477767944,
+      "gate": 0.9858566522598267
+    },
+    "X11": {
+      "regime": "limit_cycle",
+      "m1_ptp": 859.190673828125,
+      "amp": 715.0577964782715,
+      "amp_ratio": 1.0,
+      "period": 0.23120000000000002,
+      "period_err_pct": 0.0,
+      "m0_min": 0.006615441540458896,
+      "gate": 0.9782078862190247
+    },
+    "X12": {
+      "regime": "limit_cycle",
+      "m1_ptp": 272.6428451538086,
+      "amp": 270.61768341064453,
+      "amp_ratio": 1.0,
+      "period": 0.18926,
+      "period_err_pct": 0.0,
+      "m0_min": 3.9435837268829346,
+      "gate": 0.9434621930122375
+    }
+  },
+  "4242": {
+    "X1": {
+      "regime": "steady_state",
+      "m1_ptp": 1.5313269386751927e-05,
+      "gate": 0.019428744912147522,
+      "is_flat": true,
+      "status": "PERFECT FLAT"
+    },
+    "X2": {
+      "regime": "steady_state",
+      "m1_ptp": 1.6287475773424376e-05,
+      "gate": 0.015821442008018494,
+      "is_flat": true,
+      "status": "PERFECT FLAT"
+    },
+    "X3": {
+      "regime": "steady_state",
+      "m1_ptp": 3.37813105488749e-07,
+      "gate": 0.014762399718165398,
+      "is_flat": true,
+      "status": "PERFECT FLAT"
+    },
+    "X4": {
+      "regime": "steady_state",
+      "m1_ptp": 1.921051023145992e-06,
+      "gate": 0.08063079416751862,
+      "is_flat": true,
+      "status": "PERFECT FLAT"
+    },
+    "X5": {
+      "regime": "steady_state",
+      "m1_ptp": 1.3921562128871301e-05,
+      "gate": 0.020367968827486038,
+      "is_flat": true,
+      "status": "PERFECT FLAT"
+    },
+    "X6": {
+      "regime": "steady_state",
+      "m1_ptp": 4.8538913688389584e-06,
+      "gate": 0.014178716577589512,
+      "is_flat": true,
+      "status": "PERFECT FLAT"
+    },
+    "X7": {
+      "regime": "limit_cycle",
+      "m1_ptp": 1016.4879150390625,
+      "amp": 1016.4879150390625,
+      "amp_ratio": 1.0,
+      "period": 0.0,
+      "period_err_pct": 0.0,
+      "m0_min": 0.0,
+      "gate": 0.9910063147544861
+    },
+    "X8": {
+      "regime": "limit_cycle",
+      "m1_ptp": 1008.3328857421875,
+      "amp": 1008.3321533203125,
+      "amp_ratio": 1.0,
+      "period": 0.40295000000000003,
+      "period_err_pct": 0.0,
+      "m0_min": 0.050534295377583034,
+      "gate": 0.9909317493438721
+    },
+    "X9": {
+      "regime": "limit_cycle",
+      "m1_ptp": 348.19416427612305,
+      "amp": 319.2508964538574,
+      "amp_ratio": 1.0,
+      "period": 0.1927,
+      "period_err_pct": 0.0,
+      "m0_min": 1.3687165975570679,
+      "gate": 0.9909301400184631
+    },
+    "X10": {
+      "regime": "limit_cycle",
+      "m1_ptp": 210.68195724487305,
+      "amp": 170.36949157714844,
+      "amp_ratio": 1.0,
+      "period": 0.23046,
+      "period_err_pct": 0.0,
+      "m0_min": 1.3594526052474976,
+      "gate": 0.9908944368362427
+    },
+    "X11": {
+      "regime": "limit_cycle",
+      "m1_ptp": 727.252197265625,
+      "amp": 727.1609581727535,
+      "amp_ratio": 1.0,
+      "period": 0.3463,
+      "period_err_pct": 0.0,
+      "m0_min": 0.006615441540458896,
+      "gate": 0.9871718287467957
+    },
+    "X12": {
+      "regime": "limit_cycle",
+      "m1_ptp": 23.850921630859375,
+      "amp": 12.57559585571289,
+      "amp_ratio": 1.0,
+      "period": 0.16366666666666668,
+      "period_err_pct": 0.0,
+      "m0_min": 5.421977519989014,
+      "gate": 0.9530612826347351
+    }
+  },
+  "7777": {
+    "X1": {
+      "regime": "steady_state",
+      "m1_ptp": 1.5313269386751927e-05,
+      "gate": 0.019242797046899796,
+      "is_flat": true,
+      "status": "PERFECT FLAT"
+    },
+    "X2": {
+      "regime": "steady_state",
+      "m1_ptp": 1.6287475773424376e-05,
+      "gate": 0.017020026221871376,
+      "is_flat": true,
+      "status": "PERFECT FLAT"
+    },
+    "X3": {
+      "regime": "steady_state",
+      "m1_ptp": 3.37813105488749e-07,
+      "gate": 0.016379039734601974,
+      "is_flat": true,
+      "status": "PERFECT FLAT"
+    },
+    "X4": {
+      "regime": "steady_state",
+      "m1_ptp": 1.921051023145992e-06,
+      "gate": 0.08238869905471802,
+      "is_flat": true,
+      "status": "PERFECT FLAT"
+    },
+    "X5": {
+      "regime": "steady_state",
+      "m1_ptp": 1.3921562128871301e-05,
+      "gate": 0.022063499316573143,
+      "is_flat": true,
+      "status": "PERFECT FLAT"
+    },
+    "X6": {
+      "regime": "steady_state",
+      "m1_ptp": 4.8538913688389584e-06,
+      "gate": 0.016077155247330666,
+      "is_flat": true,
+      "status": "PERFECT FLAT"
+    },
+    "X7": {
+      "regime": "limit_cycle",
+      "m1_ptp": 895.4547119140625,
+      "amp": 872.6911602020264,
+      "amp_ratio": 1.0,
+      "period": 0.1519,
+      "period_err_pct": 0.0,
+      "m0_min": 0.0,
+      "gate": 0.9783251881599426
+    },
+    "X8": {
+      "regime": "limit_cycle",
+      "m1_ptp": 876.6649780273438,
+      "amp": 832.1710066795349,
+      "amp_ratio": 1.0,
+      "period": 0.2669,
+      "period_err_pct": 0.0,
+      "m0_min": 0.050534295377583034,
+      "gate": 0.9782145023345947
+    },
+    "X9": {
+      "regime": "limit_cycle",
+      "m1_ptp": 442.49530506134033,
+      "amp": 435.03467496236163,
+      "amp_ratio": 1.0,
+      "period": 0.21764000000000003,
+      "period_err_pct": 0.0,
+      "m0_min": 0.5934795141220093,
+      "gate": 0.9782394766807556
+    },
+    "X10": {
+      "regime": "limit_cycle",
+      "m1_ptp": 222.35816192626953,
+      "amp": 33.48407745361328,
+      "amp_ratio": 1.0,
+      "period": 0.25420000000000004,
+      "period_err_pct": 0.0,
+      "m0_min": 0.826785683631897,
+      "gate": 0.9781913161277771
+    },
+    "X11": {
+      "regime": "limit_cycle",
+      "m1_ptp": 932.609619140625,
+      "amp": 851.7706317901611,
+      "amp_ratio": 1.0,
+      "period": 0.22173333333333337,
+      "period_err_pct": 0.0,
+      "m0_min": 0.006615441540458896,
+      "gate": 0.9704576730728149
+    },
+    "X12": {
+      "regime": "limit_cycle",
+      "m1_ptp": 182.9548666294816,
+      "amp": 32.158843994140625,
+      "amp_ratio": 1.0,
+      "period": 0.1638,
+      "period_err_pct": 0.0,
+      "m0_min": 2.1606340408325195,
+      "gate": 0.938994288444519
+    }
+  }
+}

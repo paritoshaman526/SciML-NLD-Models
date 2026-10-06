@@ -1,0 +1,135 @@
+{
+  "stage": 8,
+  "status": "PASSED",
+  "timestamp": "2026-10-06 10:17:25",
+  "confidence_intervals": {
+    "vdp_mu_c": {
+      "mean": 0.036652571830864074,
+      "std": 0.020645043454925294,
+      "ci_95": [
+        0.0218996790259656,
+        0.05341183800472983
+      ],
+      "true_val": 0.0,
+      "unit": "dimensionless"
+    },
+    "fhn_I_c": {
+      "mean": 0.3286553619882895,
+      "std": 0.0030548211285345342,
+      "ci_95": [
+        0.3261848306737072,
+        0.33079992633182054
+      ],
+      "true_val": 0.33128133745474575,
+      "unit": "dimensionless (current)"
+    },
+    "fhn_T_08": {
+      "mean": 36.52142857142858,
+      "std": 0.052489065916783685,
+      "ci_95": [
+        36.48254412723813,
+        36.56031301561903
+      ],
+      "true_val": 36.5,
+      "unit": "s"
+    },
+    "supramolecular_ka_c": {
+      "mean": 0.28068571428571426,
+      "std": 0.06987587829392156,
+      "ci_95": [
+        0.22017142857142855,
+        0.3210285714285715
+      ],
+      "true_val": 0.345,
+      "unit": "s^-1"
+    },
+    "supramolecular_mass_drift": {
+      "mean": 0.001953125085492502,
+      "std": 0.0,
+      "ci_95": [
+        0.001953125085492502,
+        0.001953125085492502
+      ],
+      "unit": "uM"
+    },
+    "lorenz_ftle_lambda1": {
+      "mean": 0.9476671890943957,
+      "std": 0.8767524263009493,
+      "ci_95": [
+        0.7173499694896035,
+        1.1821707719434265
+      ],
+      "true_ref": 0.9056,
+      "unit": "nat/s"
+    }
+  },
+  "significance_tests": {
+    "fhn_hopf_error": {
+      "p_value_exact_sign_test": 0.015625,
+      "d_1sample_benchmark": 26.448022456962974,
+      "d_pseudo_pooled": 37.40315205139772,
+      "significant_p05": true,
+      "n_seeds": 7,
+      "p_floor_note": "Hits N=7 exact two-sided sign test floor (p_min = 2/128 = 0.015625); does not discriminate effect magnitude",
+      "interpretation": "Proposed FiLM demonstrated substantial reduction in Hopf onset error (exact p = 0.015625; 1-sample d = +26.45, pseudo-pooled d = +37.40)"
+    },
+    "supramolecular_mass_drift": {
+      "p_value_exact_sign_test": 0.015625,
+      "d_1sample_benchmark": 98096598452931.75,
+      "d_pseudo_pooled": 5.627075477009283,
+      "significant_p05": true,
+      "n_seeds": 7,
+      "p_floor_note": "Hits N=7 exact two-sided sign test floor (p_min = 0.015625); does not discriminate effect magnitude",
+      "interpretation": "Hard stoichiometric projection eliminates mass loss (exact p = 0.015625; pseudo-pooled d = +5.63)"
+    },
+    "vdp_hopf_error": {
+      "p_value_exact_sign_test": 0.015625,
+      "d_1sample_benchmark": 1.7981703558388202,
+      "d_pseudo_pooled": 2.542996904637277,
+      "significant_p05": true,
+      "n_seeds": 7,
+      "p_floor_note": "Hits N=7 exact two-sided sign test floor (p_min = 0.015625); does not discriminate effect magnitude",
+      "interpretation": "Proposed FiLM demonstrated substantial suppression of bifurcation delay (exact p = 0.015625; 1-sample d = +1.94, pseudo-pooled d = +2.54)"
+    }
+  },
+  "parametric_sensitivity": {
+    "vdp_sensitivity": [
+      {
+        "jitter": -0.05,
+        "mu": 0.95,
+        "amp": 4.156883239746094
+      },
+      {
+        "jitter": -0.02,
+        "mu": 0.98,
+        "amp": 4.158443450927734
+      },
+      {
+        "jitter": -0.01,
+        "mu": 0.99,
+        "amp": 4.159343242645264
+      },
+      {
+        "jitter": 0.0,
+        "mu": 1.0,
+        "amp": 4.159919261932373
+      },
+      {
+        "jitter": 0.01,
+        "mu": 1.01,
+        "amp": 4.160514831542969
+      },
+      {
+        "jitter": 0.02,
+        "mu": 1.02,
+        "amp": 4.161046981811523
+      },
+      {
+        "jitter": 0.05,
+        "mu": 1.05,
+        "amp": 4.1626996994018555
+      }
+    ],
+    "vdp_sensitivity_index": 0.014570179698882952
+  }
+}

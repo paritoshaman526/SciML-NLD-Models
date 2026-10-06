@@ -1,0 +1,24 @@
+{
+  "wasserstein_1": {
+    "model_a": 0.01615254849632898,
+    "model_b": 0.011365478926549788,
+    "baseline": 0.04462034915576464
+  },
+  "peak_frequency": {
+    "gt": 0.146484375,
+    "model_a": 0.146484375,
+    "model_b": 0.146484375,
+    "baseline": 0.15625
+  },
+  "poincare_fixed_point": {
+    "gt": 2.0084122691431547,
+    "model_a": 1.9726914712938213,
+    "model_b": 1.9827174961566925,
+    "baseline": 1.9145656726399407
+  },
+  "hopf_crossing": {
+    "analytical": 0.0,
+    "model_a": 0.0,
+    "model_b": 0.0
+  }
+}

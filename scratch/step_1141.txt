@@ -1,0 +1,23 @@
+Created At: 2026-10-02T21:07:18+05:30
+Completed At: 2026-10-02T21:07:27+05:30
+
+				The command exited with code 1.
+				Output:
+				=== Hopf Boundary kd3_max(ka) ===
+    ka   RK4 kd3_max   NN kd3_max   Deviation   Rel Error
+   1.0         2.200        2.200      +0.000       +0.0%
+   2.5         1.953        2.200      +0.247      +12.7%
+   5.0         1.459        2.050      +0.591      +40.5%
+   8.5         0.841        1.300      +0.459      +54.5%
+  12.0         0.000        0.700      +0.700    +7000.0%
+
+RK4 boundary poly fit (deg 2): [-0.00357783 -0.15156764  2.34749861]  RMSE=0.0270
+NN  boundary poly fit (deg 2): [-0.00992294 -0.01576377  2.27460001]   RMSE=0.0784
+Traceback (most recent call last):
+  File "C:\Users\satya\.gemini\antigravity-ide\brain\3151cfb3-d901-4f95-828f-4ce9beed7afd\scratch\bifurcation_plots.py", line 75, in <module>
+    print(f"\nMax NN deviation: {nn_kd3max[max_dev_idx]-rk4_kd3max[max_dev_idx]:+.3f} s\u207b� at ka={KA[max_dev_idx]}")
+  File "C:\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u207b' in position 28: character maps to <undefined>
+

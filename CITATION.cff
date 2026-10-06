@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this benchmark codebase or framework in your research, please cite it as below."
+authors:
+  - family-names: "SciML Research Team"
+title: "Beyond Trajectory Fitting: Preserving Bifurcation Manifolds, Ergodic Invariants, and Stoichiometric Conservation in Scientific Machine Learning"
+version: 1.0.0
+date-released: 2026-10-06
+url: "https://github.com/your-username/sciml-bifurcation-benchmark"
+keywords:
+  - "scientific machine learning"
+  - "neural ordinary differential equations"
+  - "bifurcation theory"
+  - "dynamical systems"
+  - "ergodic invariants"
+  - "lyapunov exponents"
+  - "stoichiometric conservation"
+  - "film modulation"

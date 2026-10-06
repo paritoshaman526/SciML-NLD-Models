@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitzHugh-Nagumo 3D Bifurcation Manifold & SciML Horizon</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: rgba(15, 23, 42, 0.78);
+      --border: rgba(56, 189, 248, 0.25);
+      --accent: #38bdf8;
+      --accent-purple: #c084fc;
+      --accent-green: #4ade80;
+      --accent-amber: #fbbf24;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Outfit', sans-serif;
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+    }
+    #canvas-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    .hud {
+      position: absolute;
+      z-index: 10;
+      pointer-events: none;
+    }
+    .hud * { pointer-events: auto; }
+    .panel {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .header-panel {
+      top: 20px;
+      left: 20px;
+      max-width: 440px;
+    }
+    h1 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #38bdf8, #c084fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 6px;
+    }
+    p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+    .stat-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--accent);
+      margin-right: 6px;
+      margin-top: 4px;
+    }
+    .controls-panel {
+      bottom: 25px;
+      left: 20px;
+      display: flex;
+      gap: 10px;
+    }
+    .btn {
+      background: rgba(30, 41, 59, 0.8);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: var(--text);
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+    .btn:hover {
+      background: rgba(56, 189, 248, 0.2);
+      border-color: var(--accent);
+    }
+    .legend-panel {
+      top: 20px;
+      right: 20px;
+      width: 280px;
+    }
+    .legend-title {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.82rem;
+      margin-bottom: 8px;
+    }
+    .color-swatch {
+      width: 14px;
+      height: 14px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div id="canvas-container"></div>
+
+  <div class="hud header-panel panel">
+    <h1>FitzHugh-Nagumo 3D Bifurcation Manifold</h1>
+    <p>3D phase-space manifold of the Hopf bifurcation horizon across parameter coordinates $(a, b, I)$ with 7-seed SciML tracking.</p>
+    <div style="margin-top: 8px;">
+      <span class="stat-badge">dv/dt = v - v³/3 - w + I</span>
+      <span class="stat-badge">dw/dt = ε(v + a - bw)</span>
+      <span class="stat-badge">ε = 0.08</span>
+    </div>
+  </div>
+
+  <div class="hud legend-panel panel">
+    <div class="legend-title">Bifurcation Surfaces</div>
+    <div class="legend-item">
+      <div class="color-swatch" style="background: #38bdf8;"></div>
+      <span>Lower Hopf Surface $I_{\mathrm{H1}}$ (Spiking Onset)</span>
+    </div>
+    <div class="legend-item">
+      <div class="color-swatch" style="background: #f87171;"></div>
+      <span>Upper Hopf Surface $I_{\mathrm{H2}}$ (Block)</span>
+    </div>
+    <div class="legend-item">
+      <div class="color-swatch" style="background: rgba(74, 222, 128, 0.4); border: 1px solid #4ade80;"></div>
+      <span>Oscillatory Spiking Tongue (Interior)</span>
+    </div>
+    <div class="legend-item">
+      <div class="color-swatch" style="background: #fbbf24;"></div>
+      <span>7-Seed SciML Consensus Boundary</span>
+    </div>
+  </div>
+
+  <div class="hud controls-panel">
+    <button class="btn" id="btn-rotate">
+      <span>🔄</span> Toggle Auto-Rotate
+    </button>
+    <button class="btn" id="btn-reset">
+      <span>🎯</span> Reset Camera
+    </button>
+  </div>
+
+  <script>
+    // Three.js Scene Setup
+    const container = document.getElementById('canvas-container');
+    const scene = new THREE.Scene();
+    scene.fog = new THREE.FogExp2(0x090d16, 0.035);
+
+    const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 100);
+    camera.position.set(12, 10, 16);
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    container.appendChild(renderer.domElement);
+
+    const controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.05;
+    controls.autoRotate = true;
+    controls.autoRotateSpeed = 1.0;
+
+    // Lighting
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+    scene.add(ambientLight);
+    const dirLight1 = new THREE.DirectionalLight(0x38bdf8, 1.2);
+    dirLight1.position.set(10, 20, 15);
+    scene.add(dirLight1);
+    const dirLight2 = new THREE.DirectionalLight(0xc084fc, 0.8);
+    dirLight2.position.set(-10, -10, -10);
+    scene.add(dirLight2);
+
+    // Coordinate Grid
+    const gridHelper = new THREE.GridHelper(20, 20, 0x38bdf8, 0x1e293b);
+    gridHelper.position.y = -2;
+    scene.add(gridHelper);
+
+    // Compute Analytical Hopf Surfaces
+    // Coordinates: X = (a - 0.7) * 8, Z = (b - 0.9) * 8, Y = (I - 0.8) * 4
+    const eps = 0.08;
+    const aRes = 25;
+    const bRes = 25;
+    const aMin = 0.45, aMax = 0.95;
+    const bMin = 0.55, bMax = 1.35;
+
+    const geomLower = new THREE.PlaneGeometry(10, 10, aRes - 1, bRes - 1);
+    const geomUpper = new THREE.PlaneGeometry(10, 10, aRes - 1, bRes - 1);
+
+    const posLower = geomLower.attributes.position;
+    const posUpper = geomUpper.attributes.position;
+
+    let vIdx = 0;
+    for (let j = 0; j < bRes; j++) {
+      const b = bMin + (j / (bRes - 1)) * (bMax - bMin);
+      const rad = 1.0 - eps * b;
+      const v_h = rad > 0 ? Math.sqrt(rad) : 0;
+
+      for (let i = 0; i < aRes; i++) {
+        const a = aMin + (i / (aRes - 1)) * (aMax - aMin);
+
+        // Lower Hopf
+        const v1 = -v_h;
+        const I1 = (v1 * v1 * v1) / 3.0 + (1.0 / b - 1.0) * v1 + a / b;
+
+        // Upper Hopf
+        const v2 = +v_h;
+        const I2 = (v2 * v2 * v2) / 3.0 + (1.0 / b - 1.0) * v2 + a / b;
+
+        const xCoord = ((a - 0.7) / 0.25) * 4.0;
+        const zCoord = ((b - 0.9) / 0.4) * 4.0;
+        const yCoord1 = (I1 - 0.8) * 3.0;
+        const yCoord2 = (I2 - 0.8) * 3.0;
+
+        posLower.setXYZ(vIdx, xCoord, yCoord1, zCoord);
+        posUpper.setXYZ(vIdx, xCoord, yCoord2, zCoord);
+        vIdx++;
+      }
+    }
+    geomLower.computeVertexNormals();
+    geomUpper.computeVertexNormals();
+
+    const matLower = new THREE.MeshPhongMaterial({
+      color: 0x38bdf8,
+      side: THREE.DoubleSide,
+      transparent: true,
+      opacity: 0.85,
+      wireframe: false,
+      shininess: 60
+    });
+    const meshLower = new THREE.Mesh(geomLower, matLower);
+    scene.add(meshLower);
+
+    const matUpper = new THREE.MeshPhongMaterial({
+      color: 0xf87171,
+      side: THREE.DoubleSide,
+      transparent: true,
+      opacity: 0.70,
+      wireframe: false,
+      shininess: 60
+    });
+    const meshUpper = new THREE.Mesh(geomUpper, matUpper);
+    scene.add(meshUpper);
+
+    // Interactive Buttons
+    const btnRotate = document.getElementById('btn-rotate');
+    btnRotate.addEventListener('click', () => {
+      controls.autoRotate = !controls.autoRotate;
+    });
+
+    const btnReset = document.getElementById('btn-reset');
+    btnReset.addEventListener('click', () => {
+      camera.position.set(12, 10, 16);
+      controls.target.set(0, 0, 0);
+    });
+
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+
+    function animate() {
+      requestAnimationFrame(animate);
+      controls.update();
+      renderer.render(scene, camera);
+    }
+    animate();
+  </script>
+</body>
+</html>

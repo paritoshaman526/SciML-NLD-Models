@@ -1,0 +1,749 @@
+{
+  "seeds": [
+    42,
+    101,
+    777,
+    999,
+    1234,
+    2024,
+    5555
+  ],
+  "per_seed": {
+    "42": {
+      "X1": {
+        "regime": "Stable Focus",
+        "gt_val": 285.36855792962524,
+        "pred_val": 285.3685607910156,
+        "error": 2.8613903850782663e-06,
+        "error_unit": "mM"
+      },
+      "X2": {
+        "regime": "Stable Focus",
+        "gt_val": 312.0670201352041,
+        "pred_val": 312.0670166015625,
+        "error": 3.5336415749043226e-06,
+        "error_unit": "mM"
+      },
+      "X3": {
+        "regime": "Stable Focus",
+        "gt_val": 281.892625878696,
+        "pred_val": 281.89263916015625,
+        "error": 1.3281460269354284e-05,
+        "error_unit": "mM"
+      },
+      "X4": {
+        "regime": "Stable Focus",
+        "gt_val": 283.00702542633917,
+        "pred_val": 283.00701904296875,
+        "error": 6.383370418916456e-06,
+        "error_unit": "mM"
+      },
+      "X5": {
+        "regime": "Stable Focus",
+        "gt_val": 359.05423645420524,
+        "pred_val": 359.04931640625,
+        "error": 0.00492004795523826,
+        "error_unit": "mM"
+      },
+      "X6": {
+        "regime": "Stable Focus",
+        "gt_val": 419.9141526137755,
+        "pred_val": 419.9141540527344,
+        "error": 1.438958861399442e-06,
+        "error_unit": "mM"
+      },
+      "X7": {
+        "regime": "Limit Cycle",
+        "gt_val": 721.1875370936102,
+        "pred_val": 562.1527099609375,
+        "error": 22.051799144170456,
+        "error_unit": "%"
+      },
+      "X8": {
+        "regime": "Limit Cycle",
+        "gt_val": 841.9613563096492,
+        "pred_val": 842.202305816114,
+        "error": 0.028617644344253033,
+        "error_unit": "%"
+      },
+      "X9": {
+        "regime": "Limit Cycle",
+        "gt_val": 302.5477207981808,
+        "pred_val": 302.38015937805176,
+        "error": 0.05538346799870155,
+        "error_unit": "%"
+      },
+      "X10": {
+        "regime": "Limit Cycle",
+        "gt_val": 141.84741708790517,
+        "pred_val": 141.71682357788086,
+        "error": 0.0920661882361812,
+        "error_unit": "%"
+      },
+      "X11": {
+        "regime": "Limit Cycle",
+        "gt_val": 812.7010664590805,
+        "pred_val": 813.3172935247421,
+        "error": 0.07582456712484946,
+        "error_unit": "%"
+      },
+      "X12": {
+        "regime": "Limit Cycle",
+        "gt_val": 30.78236172469788,
+        "pred_val": 30.80146026611328,
+        "error": 0.062043782040542055,
+        "error_unit": "%"
+      }
+    },
+    "101": {
+      "X1": {
+        "regime": "Stable Focus",
+        "gt_val": 285.36855792962524,
+        "pred_val": 285.3685607910156,
+        "error": 2.8613903850782663e-06,
+        "error_unit": "mM"
+      },
+      "X2": {
+        "regime": "Stable Focus",
+        "gt_val": 312.0670201352041,
+        "pred_val": 312.0670166015625,
+        "error": 3.5336415749043226e-06,
+        "error_unit": "mM"
+      },
+      "X3": {
+        "regime": "Stable Focus",
+        "gt_val": 281.892625878696,
+        "pred_val": 281.89263916015625,
+        "error": 1.3281460269354284e-05,
+        "error_unit": "mM"
+      },
+      "X4": {
+        "regime": "Stable Focus",
+        "gt_val": 283.00702542633917,
+        "pred_val": 283.00701904296875,
+        "error": 6.383370418916456e-06,
+        "error_unit": "mM"
+      },
+      "X5": {
+        "regime": "Stable Focus",
+        "gt_val": 359.05423645420524,
+        "pred_val": 359.05523681640625,
+        "error": 0.0010003622010117397,
+        "error_unit": "mM"
+      },
+      "X6": {
+        "regime": "Stable Focus",
+        "gt_val": 419.9141526137755,
+        "pred_val": 419.9141540527344,
+        "error": 1.438958861399442e-06,
+        "error_unit": "mM"
+      },
+      "X7": {
+        "regime": "Limit Cycle",
+        "gt_val": 721.1875370936102,
+        "pred_val": 2000.7408447265625,
+        "error": 177.42310312093846,
+        "error_unit": "%"
+      },
+      "X8": {
+        "regime": "Limit Cycle",
+        "gt_val": 841.9613563096492,
+        "pred_val": 842.0821794271469,
+        "error": 0.014350197499239143,
+        "error_unit": "%"
+      },
+      "X9": {
+        "regime": "Limit Cycle",
+        "gt_val": 302.5477207981808,
+        "pred_val": 302.7449359893799,
+        "error": 0.06518482131637643,
+        "error_unit": "%"
+      },
+      "X10": {
+        "regime": "Limit Cycle",
+        "gt_val": 141.84741708790517,
+        "pred_val": 141.96395874023438,
+        "error": 0.08215986919027296,
+        "error_unit": "%"
+      },
+      "X11": {
+        "regime": "Limit Cycle",
+        "gt_val": 812.7010664590805,
+        "pred_val": 812.8746317327023,
+        "error": 0.021356594790502923,
+        "error_unit": "%"
+      },
+      "X12": {
+        "regime": "Limit Cycle",
+        "gt_val": 30.78236172469788,
+        "pred_val": 30.812744140625,
+        "error": 0.09870073062894506,
+        "error_unit": "%"
+      }
+    },
+    "777": {
+      "X1": {
+        "regime": "Stable Focus",
+        "gt_val": 285.36855792962524,
+        "pred_val": 285.3685607910156,
+        "error": 2.8613903850782663e-06,
+        "error_unit": "mM"
+      },
+      "X2": {
+        "regime": "Stable Focus",
+        "gt_val": 312.0670201352041,
+        "pred_val": 312.0670166015625,
+        "error": 3.5336415749043226e-06,
+        "error_unit": "mM"
+      },
+      "X3": {
+        "regime": "Stable Focus",
+        "gt_val": 281.892625878696,
+        "pred_val": 281.89263916015625,
+        "error": 1.3281460269354284e-05,
+        "error_unit": "mM"
+      },
+      "X4": {
+        "regime": "Stable Focus",
+        "gt_val": 283.00702542633917,
+        "pred_val": 283.00701904296875,
+        "error": 6.383370418916456e-06,
+        "error_unit": "mM"
+      },
+      "X5": {
+        "regime": "Stable Focus",
+        "gt_val": 359.05423645420524,
+        "pred_val": 359.0542297363281,
+        "error": 6.717877113260329e-06,
+        "error_unit": "mM"
+      },
+      "X6": {
+        "regime": "Stable Focus",
+        "gt_val": 419.9141526137755,
+        "pred_val": 419.9141540527344,
+        "error": 1.438958861399442e-06,
+        "error_unit": "mM"
+      },
+      "X7": {
+        "regime": "Limit Cycle",
+        "gt_val": 721.1875370936102,
+        "pred_val": 0.009486159309744835,
+        "error": 99.99868464735982,
+        "error_unit": "%"
+      },
+      "X8": {
+        "regime": "Limit Cycle",
+        "gt_val": 841.9613563096492,
+        "pred_val": 841.9500688537955,
+        "error": 0.0013406144794042972,
+        "error_unit": "%"
+      },
+      "X9": {
+        "regime": "Limit Cycle",
+        "gt_val": 302.5477207981808,
+        "pred_val": 302.3418598175049,
+        "error": 0.0680424827306034,
+        "error_unit": "%"
+      },
+      "X10": {
+        "regime": "Limit Cycle",
+        "gt_val": 141.84741708790517,
+        "pred_val": 141.68027877807617,
+        "error": 0.1178296462919878,
+        "error_unit": "%"
+      },
+      "X11": {
+        "regime": "Limit Cycle",
+        "gt_val": 812.7010664590805,
+        "pred_val": 813.5382113456726,
+        "error": 0.10300772585909534,
+        "error_unit": "%"
+      },
+      "X12": {
+        "regime": "Limit Cycle",
+        "gt_val": 30.78236172469788,
+        "pred_val": 30.755447387695312,
+        "error": 0.08743428214922036,
+        "error_unit": "%"
+      }
+    },
+    "999": {
+      "X1": {
+        "regime": "Stable Focus",
+        "gt_val": 285.36855792962524,
+        "pred_val": 285.3685607910156,
+        "error": 2.8613903850782663e-06,
+        "error_unit": "mM"
+      },
+      "X2": {
+        "regime": "Stable Focus",
+        "gt_val": 312.0670201352041,
+        "pred_val": 312.0670166015625,
+        "error": 3.5336415749043226e-06,
+        "error_unit": "mM"
+      },
+      "X3": {
+        "regime": "Stable Focus",
+        "gt_val": 281.892625878696,
+        "pred_val": 281.89263916015625,
+        "error": 1.3281460269354284e-05,
+        "error_unit": "mM"
+      },
+      "X4": {
+        "regime": "Stable Focus",
+        "gt_val": 283.00702542633917,
+        "pred_val": 283.00701904296875,
+        "error": 6.383370418916456e-06,
+        "error_unit": "mM"
+      },
+      "X5": {
+        "regime": "Stable Focus",
+        "gt_val": 359.05423645420524,
+        "pred_val": 359.0542297363281,
+        "error": 6.717877113260329e-06,
+        "error_unit": "mM"
+      },
+      "X6": {
+        "regime": "Stable Focus",
+        "gt_val": 419.9141526137755,
+        "pred_val": 419.9141540527344,
+        "error": 1.438958861399442e-06,
+        "error_unit": "mM"
+      },
+      "X7": {
+        "regime": "Limit Cycle",
+        "gt_val": 721.1875370936102,
+        "pred_val": 661.1007690429688,
+        "error": 8.33164259781741,
+        "error_unit": "%"
+      },
+      "X8": {
+        "regime": "Limit Cycle",
+        "gt_val": 841.9613563096492,
+        "pred_val": 842.0120620429516,
+        "error": 0.006022334982762721,
+        "error_unit": "%"
+      },
+      "X9": {
+        "regime": "Limit Cycle",
+        "gt_val": 302.5477207981808,
+        "pred_val": 302.8718681335449,
+        "error": 0.10713924220249876,
+        "error_unit": "%"
+      },
+      "X10": {
+        "regime": "Limit Cycle",
+        "gt_val": 141.84741708790517,
+        "pred_val": 142.1056251525879,
+        "error": 0.1820322639521195,
+        "error_unit": "%"
+      },
+      "X11": {
+        "regime": "Limit Cycle",
+        "gt_val": 812.7010664590805,
+        "pred_val": 813.1506009995937,
+        "error": 0.055313639795238935,
+        "error_unit": "%"
+      },
+      "X12": {
+        "regime": "Limit Cycle",
+        "gt_val": 30.78236172469788,
+        "pred_val": 30.819137573242188,
+        "error": 0.11947052300019709,
+        "error_unit": "%"
+      }
+    },
+    "1234": {
+      "X1": {
+        "regime": "Stable Focus",
+        "gt_val": 285.36855792962524,
+        "pred_val": 285.3685607910156,
+        "error": 2.8613903850782663e-06,
+        "error_unit": "mM"
+      },
+      "X2": {
+        "regime": "Stable Focus",
+        "gt_val": 312.0670201352041,
+        "pred_val": 312.0670166015625,
+        "error": 3.5336415749043226e-06,
+        "error_unit": "mM"
+      },
+      "X3": {
+        "regime": "Stable Focus",
+        "gt_val": 281.892625878696,
+        "pred_val": 281.89263916015625,
+        "error": 1.3281460269354284e-05,
+        "error_unit": "mM"
+      },
+      "X4": {
+        "regime": "Stable Focus",
+        "gt_val": 283.00702542633917,
+        "pred_val": 283.00701904296875,
+        "error": 6.383370418916456e-06,
+        "error_unit": "mM"
+      },
+      "X5": {
+        "regime": "Stable Focus",
+        "gt_val": 359.05423645420524,
+        "pred_val": 359.0542297363281,
+        "error": 6.717877113260329e-06,
+        "error_unit": "mM"
+      },
+      "X6": {
+        "regime": "Stable Focus",
+        "gt_val": 419.9141526137755,
+        "pred_val": 419.9141540527344,
+        "error": 1.438958861399442e-06,
+        "error_unit": "mM"
+      },
+      "X7": {
+        "regime": "Limit Cycle",
+        "gt_val": 721.1875370936102,
+        "pred_val": 2253.662841796875,
+        "error": 212.49331496758094,
+        "error_unit": "%"
+      },
+      "X8": {
+        "regime": "Limit Cycle",
+        "gt_val": 841.9613563096492,
+        "pred_val": 841.9621480479836,
+        "error": 9.40349967975059e-05,
+        "error_unit": "%"
+      },
+      "X9": {
+        "regime": "Limit Cycle",
+        "gt_val": 302.5477207981808,
+        "pred_val": 302.6582546234131,
+        "error": 0.03653434405014079,
+        "error_unit": "%"
+      },
+      "X10": {
+        "regime": "Limit Cycle",
+        "gt_val": 141.84741708790517,
+        "pred_val": 142.01870727539062,
+        "error": 0.12075664894151891,
+        "error_unit": "%"
+      },
+      "X11": {
+        "regime": "Limit Cycle",
+        "gt_val": 812.7010664590805,
+        "pred_val": 812.8065594434738,
+        "error": 0.012980539677762797,
+        "error_unit": "%"
+      },
+      "X12": {
+        "regime": "Limit Cycle",
+        "gt_val": 30.78236172469788,
+        "pred_val": 30.8128662109375,
+        "error": 0.09909728991049642,
+        "error_unit": "%"
+      }
+    },
+    "2024": {
+      "X1": {
+        "regime": "Stable Focus",
+        "gt_val": 285.36855792962524,
+        "pred_val": 285.3866882324219,
+        "error": 0.01813030279663508,
+        "error_unit": "mM"
+      },
+      "X2": {
+        "regime": "Stable Focus",
+        "gt_val": 312.0670201352041,
+        "pred_val": 312.0670166015625,
+        "error": 3.5336415749043226e-06,
+        "error_unit": "mM"
+      },
+      "X3": {
+        "regime": "Stable Focus",
+        "gt_val": 281.892625878696,
+        "pred_val": 281.87353515625,
+        "error": 0.019090722445980646,
+        "error_unit": "mM"
+      },
+      "X4": {
+        "regime": "Stable Focus",
+        "gt_val": 283.00702542633917,
+        "pred_val": 283.00701904296875,
+        "error": 6.383370418916456e-06,
+        "error_unit": "mM"
+      },
+      "X5": {
+        "regime": "Stable Focus",
+        "gt_val": 359.05423645420524,
+        "pred_val": 359.0542297363281,
+        "error": 6.717877113260329e-06,
+        "error_unit": "mM"
+      },
+      "X6": {
+        "regime": "Stable Focus",
+        "gt_val": 419.9141526137755,
+        "pred_val": 419.9141540527344,
+        "error": 1.438958861399442e-06,
+        "error_unit": "mM"
+      },
+      "X7": {
+        "regime": "Limit Cycle",
+        "gt_val": 721.1875370936102,
+        "pred_val": 541.2796020507812,
+        "error": 24.946068226283963,
+        "error_unit": "%"
+      },
+      "X8": {
+        "regime": "Limit Cycle",
+        "gt_val": 841.9613563096492,
+        "pred_val": 842.2013739198446,
+        "error": 0.02850696274796149,
+        "error_unit": "%"
+      },
+      "X9": {
+        "regime": "Limit Cycle",
+        "gt_val": 302.5477207981808,
+        "pred_val": 302.1859016418457,
+        "error": 0.1195907724508932,
+        "error_unit": "%"
+      },
+      "X10": {
+        "regime": "Limit Cycle",
+        "gt_val": 141.84741708790517,
+        "pred_val": 141.63257217407227,
+        "error": 0.15146198516943224,
+        "error_unit": "%"
+      },
+      "X11": {
+        "regime": "Limit Cycle",
+        "gt_val": 812.7010664590805,
+        "pred_val": 811.8542155623436,
+        "error": 0.10420201617632983,
+        "error_unit": "%"
+      },
+      "X12": {
+        "regime": "Limit Cycle",
+        "gt_val": 30.78236172469788,
+        "pred_val": 30.7518310546875,
+        "error": 0.09918235086517914,
+        "error_unit": "%"
+      }
+    },
+    "5555": {
+      "X1": {
+        "regime": "Stable Focus",
+        "gt_val": 285.36855792962524,
+        "pred_val": 285.3685607910156,
+        "error": 2.8613903850782663e-06,
+        "error_unit": "mM"
+      },
+      "X2": {
+        "regime": "Stable Focus",
+        "gt_val": 312.0670201352041,
+        "pred_val": 312.07025146484375,
+        "error": 0.0032313296396750957,
+        "error_unit": "mM"
+      },
+      "X3": {
+        "regime": "Stable Focus",
+        "gt_val": 281.892625878696,
+        "pred_val": 281.89263916015625,
+        "error": 1.3281460269354284e-05,
+        "error_unit": "mM"
+      },
+      "X4": {
+        "regime": "Stable Focus",
+        "gt_val": 283.00702542633917,
+        "pred_val": 283.00701904296875,
+        "error": 6.383370418916456e-06,
+        "error_unit": "mM"
+      },
+      "X5": {
+        "regime": "Stable Focus",
+        "gt_val": 359.05423645420524,
+        "pred_val": 359.0542297363281,
+        "error": 6.717877113260329e-06,
+        "error_unit": "mM"
+      },
+      "X6": {
+        "regime": "Stable Focus",
+        "gt_val": 419.9141526137755,
+        "pred_val": 419.9141540527344,
+        "error": 1.438958861399442e-06,
+        "error_unit": "mM"
+      },
+      "X7": {
+        "regime": "Limit Cycle",
+        "gt_val": 721.1875370936102,
+        "pred_val": 524.7426147460938,
+        "error": 27.239090006905915,
+        "error_unit": "%"
+      },
+      "X8": {
+        "regime": "Limit Cycle",
+        "gt_val": 841.9613563096492,
+        "pred_val": 841.9683060273528,
+        "error": 0.0008254200328226967,
+        "error_unit": "%"
+      },
+      "X9": {
+        "regime": "Limit Cycle",
+        "gt_val": 302.5477207981808,
+        "pred_val": 302.97205924987793,
+        "error": 0.14025504822102827,
+        "error_unit": "%"
+      },
+      "X10": {
+        "regime": "Limit Cycle",
+        "gt_val": 141.84741708790517,
+        "pred_val": 142.1250457763672,
+        "error": 0.19572347115066976,
+        "error_unit": "%"
+      },
+      "X11": {
+        "regime": "Limit Cycle",
+        "gt_val": 812.7010664590805,
+        "pred_val": 809.9132247567177,
+        "error": 0.34303408933734675,
+        "error_unit": "%"
+      },
+      "X12": {
+        "regime": "Limit Cycle",
+        "gt_val": 30.78236172469788,
+        "pred_val": 30.827392578125,
+        "error": 0.1462878444151072,
+        "error_unit": "%"
+      }
+    }
+  },
+  "table1": [
+    {
+      "id": "X1",
+      "regime": "Stable Focus",
+      "params_str": "(11.0, 6000, 0.15)",
+      "gt_metric": "285.4 mM",
+      "mean_std": "0.00 \u00b1 0.01 mM",
+      "median": "0.00 mM",
+      "min_max": "(0.00 \u2013 0.02)",
+      "mean_num": 0.0025924958769922212,
+      "std_num": 0.006343283112501778
+    },
+    {
+      "id": "X2",
+      "regime": "Stable Focus",
+      "params_str": "(12.0, 6000, 0.15)",
+      "gt_metric": "312.1 mM",
+      "mean_std": "0.00 \u00b1 0.00 mM",
+      "median": "0.00 mM",
+      "min_max": "(0.00 \u2013 0.00)",
+      "mean_num": 0.00046464735558921736,
+      "std_num": 0.0011294933127347156
+    },
+    {
+      "id": "X3",
+      "regime": "Stable Focus",
+      "params_str": "(13.0, 6000, 0.25)",
+      "gt_metric": "281.9 mM",
+      "mean_std": "0.00 \u00b1 0.01 mM",
+      "median": "0.00 mM",
+      "min_max": "(0.00 \u2013 0.02)",
+      "mean_num": 0.0027386301725138246,
+      "std_num": 0.006675713716150173
+    },
+    {
+      "id": "X4",
+      "regime": "Stable Focus",
+      "params_str": "(10.5, 4600, 0.6)",
+      "gt_metric": "283.0 mM",
+      "mean_std": "0.00 \u00b1 0.00 mM",
+      "median": "0.00 mM",
+      "min_max": "(0.00 \u2013 0.00)",
+      "mean_num": 6.383370418916456e-06,
+      "std_num": 0.0
+    },
+    {
+      "id": "X5",
+      "regime": "Stable Focus",
+      "params_str": "(12.0, 4500, 0.5)",
+      "gt_metric": "359.1 mM",
+      "mean_std": "0.00 \u00b1 0.00 mM",
+      "median": "0.00 mM",
+      "min_max": "(0.00 \u2013 0.00)",
+      "mean_num": 0.0008505713631166145,
+      "std_num": 0.0016963625184554403
+    },
+    {
+      "id": "X6",
+      "regime": "Stable Focus",
+      "params_str": "(14.0, 5000, 0.3)",
+      "gt_metric": "419.9 mM",
+      "mean_std": "0.00 \u00b1 0.00 mM",
+      "median": "0.00 mM",
+      "min_max": "(0.00 \u2013 0.00)",
+      "mean_num": 1.438958861399442e-06,
+      "std_num": 0.0
+    },
+    {
+      "id": "X7",
+      "regime": "Limit Cycle",
+      "params_str": "(1.0, 3000, 0.8)",
+      "gt_metric": "721.2 mM",
+      "mean_std": "81.78 \u00b1 77.21 %",
+      "median": "27.24 %",
+      "min_max": "(8.33 \u2013 212.49)",
+      "mean_num": 81.78338610157957,
+      "std_num": 77.2125268525811
+    },
+    {
+      "id": "X8",
+      "regime": "Limit Cycle",
+      "params_str": "(2.5, 3200, 0.8)",
+      "gt_metric": "842.0 mM",
+      "mean_std": "0.01 \u00b1 0.01 %",
+      "median": "0.01 %",
+      "min_max": "(0.00 \u2013 0.03)",
+      "mean_num": 0.011393887011891557,
+      "std_num": 0.011756797177772386
+    },
+    {
+      "id": "X9",
+      "regime": "Limit Cycle",
+      "params_str": "(3.5, 2600, 1.1)",
+      "gt_metric": "302.5 mM",
+      "mean_std": "0.08 \u00b1 0.04 %",
+      "median": "0.07 %",
+      "min_max": "(0.04 \u2013 0.14)",
+      "mean_num": 0.0845900255671775,
+      "std_num": 0.03514230022829514
+    },
+    {
+      "id": "X10",
+      "regime": "Limit Cycle",
+      "params_str": "(4.5, 3500, 1.3)",
+      "gt_metric": "141.8 mM",
+      "mean_std": "0.13 \u00b1 0.04 %",
+      "median": "0.12 %",
+      "min_max": "(0.08 \u2013 0.20)",
+      "mean_num": 0.1345757247045975,
+      "std_num": 0.040182079165568534
+    },
+    {
+      "id": "X11",
+      "regime": "Limit Cycle",
+      "params_str": "(5.0, 5200, 0.35)",
+      "gt_metric": "812.7 mM",
+      "mean_std": "0.10 \u00b1 0.10 %",
+      "median": "0.08 %",
+      "min_max": "(0.01 \u2013 0.34)",
+      "mean_num": 0.1022455961087323,
+      "std_num": 0.10378237327793695
+    },
+    {
+      "id": "X12",
+      "regime": "Limit Cycle",
+      "params_str": "(8.5, 4000, 0.85)",
+      "gt_metric": "30.8 mM",
+      "mean_std": "0.10 \u00b1 0.02 %",
+      "median": "0.10 %",
+      "min_max": "(0.06 \u2013 0.15)",
+      "mean_num": 0.10174525757281248,
+      "std_num": 0.02420769541734719
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "stage": 2,
+  "status": "PASSED",
+  "timestamp": "2026-10-06 01:07:06",
+  "vdp": {
+    "model_a_short_rmse": {
+      "mean": 0.1240544845399451,
+      "std": 0.023910593044560145
+    },
+    "model_a_long_rmse": {
+      "mean": 0.8578795621370787,
+      "std": 0.20561882791248465
+    },
+    "model_a_asym": {
+      "mean": 0.003732374736240932,
+      "std": 0.0030413344477415536
+    },
+    "model_b_short_rmse": 0.19138323003041594,
+    "model_b_long_rmse": 1.325685665206074,
+    "model_b_asym": 0.0012879371643066406,
+    "baseline_short_rmse": 0.08811094859103344,
+    "baseline_long_rmse": 0.5002819364041649,
+    "baseline_asym": 0.007088661193847656
+  },
+  "fhn": {
+    "fhn_sciml_short_rmse": {
+      "mean": 0.006636847969901672,
+      "std": 0.004055489713913612
+    },
+    "fhn_sciml_long_rmse": {
+      "mean": 0.025756095643955174,
+      "std": 0.011870104945110978
+    },
+    "fhn_base_short_rmse": 1.1874576508545387,
+    "fhn_base_long_rmse": 1.3762465998211197,
+    "subthreshold_var": 4.483002885289217e-05
+  },
+  "lorenz": {
+    "lorenz_short_rmse": 0.7727898193142562,
+    "lorenz_long_rmse": 10.585227126269316,
+    "lorenz_max_radius": 52.06533164764606,
+    "lorenz_bounded": true
+  },
+  "supramolecular": {
+    "sciml_short_rmse": {
+      "mean": 108.38741747631853,
+      "std": 47.40620652690512
+    },
+    "sciml_long_rmse": {
+      "mean": 343.38251944626796,
+      "std": 188.26017300773358
+    },
+    "sciml_drift_uM": {
+      "mean": 0.001953125085492502,
+      "std": 0.0
+    },
+    "sciml_rel_drift_pct": {
+      "mean": 1.9527345385847683e-05,
+      "std": 0.0
+    },
+    "base_short_rmse": {
+      "mean": 95.44172297041197,
+      "std": 46.174633050174876
+    },
+    "base_long_rmse": {
+      "mean": 322.1196503142014,
+      "std": 204.1345549770988
+    },
+    "base_drift_uM": {
+      "mean": 98.09402901789379,
+      "std": 42.737219872768655
+    },
+    "base_rel_drift_pct": {
+      "mean": 0.9807441413506593,
+      "std": 0.427286741379407
+    }
+  }
+}

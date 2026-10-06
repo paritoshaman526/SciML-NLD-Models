@@ -1,0 +1,141 @@
+{
+  "stage": 6,
+  "status": "PASSED",
+  "timestamp": "2026-10-06 01:28:24",
+  "ablations": {
+    "Unified_Full": {
+      "label": "Full Unified SciML (proposed)",
+      "mean_amp_err_pct": 4.3142938561453725,
+      "std_amp_err_pct": 9.522232101672191,
+      "mean_retention_pct": 52.56387458538451,
+      "std_retention_pct": 19.58409452914506
+    },
+    "NoFiLM": {
+      "label": "w/o FiLM (concat [s,p])",
+      "mean_amp_err_pct": 4.33815907600798,
+      "std_amp_err_pct": 9.689465474524734,
+      "mean_retention_pct": 52.53906317961816,
+      "std_retention_pct": 19.583782877871386
+    },
+    "NoSoftplus": {
+      "label": "w/o Softplus (unbounded mod)",
+      "mean_amp_err_pct": 4.3151029560428,
+      "std_amp_err_pct": 9.524269337108871,
+      "mean_retention_pct": 52.5639399109083,
+      "std_retention_pct": 19.584128091503132
+    },
+    "NoMassProjection": {
+      "label": "w/o Mass Projection",
+      "mean_amp_err_pct": 4.113450755941136,
+      "std_amp_err_pct": 9.162387265133805,
+      "mean_retention_pct": 52.53033371725459,
+      "std_retention_pct": 19.578748269711678
+    }
+  },
+  "capacity_scaling": [
+    {
+      "order": "10^3",
+      "hidden_dim": 16,
+      "param_count": 2545,
+      "train_time_s": 4.940540790557861,
+      "rmse_short": 0.20536422369646676,
+      "rmse_long": 1.5474259440378502,
+      "learned_mu_c": 0.05,
+      "hopf_err": 0.05,
+      "pred_T": 8.950000000000001,
+      "period_err_pct": 8.81458966565349
+    },
+    {
+      "order": "10^4",
+      "hidden_dim": 64,
+      "param_count": 15409,
+      "train_time_s": 7.580766916275024,
+      "rmse_short": 0.1940261111490003,
+      "rmse_long": 1.6473109800880497,
+      "learned_mu_c": 0.05,
+      "hopf_err": 0.05,
+      "pred_T": 9.149999999999999,
+      "period_err_pct": 11.246200607902699
+    },
+    {
+      "order": "10^5",
+      "hidden_dim": 200,
+      "param_count": 101905,
+      "train_time_s": 28.29677391052246,
+      "rmse_short": 0.20790968585088038,
+      "rmse_long": 1.8161293597343486,
+      "learned_mu_c": 0.05,
+      "hopf_err": 0.05,
+      "pred_T": 9.475000000000001,
+      "period_err_pct": 15.197568389057746
+    },
+    {
+      "order": "10^6",
+      "hidden_dim": 600,
+      "param_count": 785105,
+      "train_time_s": 277.07463574409485,
+      "rmse_short": 0.2402669082886375,
+      "rmse_long": 1.872261398263568,
+      "learned_mu_c": 0.05,
+      "hopf_err": 0.05,
+      "pred_T": 9.775000000000002,
+      "period_err_pct": 18.844984802431615
+    }
+  ],
+  "triad_benchmark": {
+    "van_der_pol": {
+      "baseline_unconstrained": {
+        "short_rmse": 0.021,
+        "hopf_err": 0.07675,
+        "period_err_pct": 44.2,
+        "parity_asymmetry": 0.00709
+      },
+      "physics_residual": {
+        "short_rmse": 0.0031,
+        "hopf_err": 0.02515,
+        "period_err_pct": 26.23,
+        "parity_asymmetry": 0.00129
+      },
+      "proposed_film": {
+        "short_rmse": 0.0028,
+        "hopf_err": 0.03665,
+        "period_err_pct": 5.98,
+        "parity_asymmetry": 0.0037
+      }
+    },
+    "fitzhugh_nagumo": {
+      "baseline_unconstrained": {
+        "short_rmse": 1.1875,
+        "hopf_err": 0.08192,
+        "period_err_pct": 2.47,
+        "w1_transport": 0.07376
+      },
+      "proposed_film": {
+        "short_rmse": 0.0066,
+        "hopf_err": 0.00293,
+        "period_err_pct": 0.059,
+        "w1_transport": 0.0028
+      }
+    },
+    "supramolecular": {
+      "baseline_unconstrained": {
+        "mass_drift_uM": 98.09,
+        "mass_drift_pct": 0.981,
+        "amp_err_pct": 62.63,
+        "period_err_pct": 11.47
+      },
+      "without_mass_proj": {
+        "mass_drift_uM": 0.0265,
+        "mass_drift_pct": 0.00026,
+        "amp_err_pct": 6.58,
+        "period_err_pct": 0.06
+      },
+      "proposed_film": {
+        "mass_drift_uM": 0.00195,
+        "mass_drift_pct": 1.95e-05,
+        "amp_err_pct": 1.03,
+        "period_err_pct": 0.06
+      }
+    }
+  }
+}
